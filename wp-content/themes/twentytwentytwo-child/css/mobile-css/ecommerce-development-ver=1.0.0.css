@@ -1,0 +1,827 @@
+.hp_main_banner {
+    /*background: url("../../../../uploads/2023/05/hp_header_newbg.svg") no-repeat center bottom;
+    background-size: cover;*/
+    padding: 35px 0 30px;
+    background: transparent linear-gradient(180deg, #E7F0F8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.hp_banner_left h1{
+    letter-spacing: -0.18px;
+}
+.hp_partners_sec{
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 0 0 39px 0;
+}
+.hp_banner_left h1 span {
+    color: #50BCEB;
+}
+.hp_main_banner .serv.ban_bottom_btn a{
+    padding: 12px 15px 11px;
+    min-width: 230px;
+    display: flex;
+    margin: 10px auto 15px;
+    font-weight: 500;
+    column-gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+.hp_main_banner .serv.ban_bottom_btn{
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.hp_partners_sec .ftheading{
+	margin: 0 0 10px 0;
+}
+.hp_main_banner .serv.ban_bottom_btn a.get_st_btn {
+    background-color: transparent;
+    padding: 10px 29px 9px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-weight: 500;
+    column-gap: 8px;
+}
+.hp_main_banner .serv.ban_bottom_btn a.get_st_btn:after {
+    content: "";
+    background-image: url("../../images/get_st_ic_mob.svg");
+    width: 12px;
+    height: 10px;
+}
+.hp_main_banner .serv.ban_bottom_btn a.get_st_btn:hover:after {
+    content: "";
+    background-image: url("../../images/get_st_ic_mob_hover.svg");
+    width: 12px;
+    height: 10px;
+}
+.hp_mob_banner img {
+    max-width: 360px;
+}
+.hp_mob_banner {
+    text-align: center;
+    margin: 0 0px 0px 0px;
+}
+.partners_left {
+    float: left;
+    width: 100%;
+	overflow: hidden;
+    padding-bottom: 20px;
+}
+.partners_left .btn{
+	margin: 33px 0 0 0;
+	position: relative;
+	z-index: 9;
+}
+.Listing_outer {
+    display: flex;
+    transform: rotate(45deg);
+    align-items: center;
+    justify-content: center;
+    margin-top:40px;
+    margin-left: -18px;
+    overflow: hidden;
+    width: 100%;
+}
+.Listing_outer ol {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+}
+.Listing_outer .hex .hex_content {
+    display: flex;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.Listing_outer .hex .hex_content a,
+.Listing_outer .hex .hex_content .partner_linklogo {
+    font-size: 9px;
+    line-height: 9px;
+    color: #000000;
+    font-weight: 700;
+	letter-spacing: 0.45px;
+}
+.Listing_outer .hex .logo_img {
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 5px;
+}
+.Listing_outer .hex .logo_img img {
+    width: 100%;
+}
+.Listing_outer .hex .overlay_link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.Listing_outer .hex:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: -11px;
+    bottom: 0;
+    top: -11px;
+    border: 3px solid #d4d4d4;
+    width: calc(100% + 11px);
+    border-left: 0;
+    border-bottom: 0;
+    border-radius: 7px 10px 7px 0;
+    z-index: -1;
+}
+.Listing_outer .hex {
+    height: 100px;
+    width: 100px;
+    margin: 18px 16px;
+    text-align: center;
+    display: block;
+    clear: left;
+    position: relative;
+    border-radius: 8px;
+}
+.Listing_outer .hex.bigcommerce {
+    background: #f4f4f4;
+}
+.Listing_outer .hex.volusion {
+    background: #e2fbff;
+}
+.Listing_outer .hex.shopify {
+    background: #edffd0;
+}
+.Listing_outer .hex.Adobe {
+    background: #FFEAEB;
+}
+.Listing_outer .hex.prestashop {
+    background: #ffd8e8;
+}
+.Listing_outer .hex.shift4shop {
+    background: #e0edfe;
+}
+.Listing_outer .hex.cs-cart {
+    background: #e8faff;
+}
+.service_services_section .bds_slide .bds_sinner > div {
+    min-height: 420px;
+}
+
+
+.eCommerce_support_sec .mng_spt_right ul li:before {
+    background: url("../../../../uploads/2023/03/listing-icon_blue.svg") no-repeat center;
+}
+.why_choose_sec .lighted_head {
+    background: #A3722E;
+}
+.service_solutions .slick-slide{
+    padding: 0 7px;
+}
+.service_solutions .bds_slide .slick-list{
+    margin: 0 -7px;
+    padding: 0;
+}
+.service_solutions .slick-slide > div{
+    max-width: 370px;
+}
+.eCommerce_support_sec .sec_heading br{
+    display: none;
+}
+.mcdevice .hp_client_sec {
+    padding-top: 30px;
+}
+.hp_main_banner .serv.ban_bottom_btn .btn.get_st_btn:hover {
+    background: #35ade3;
+}
+.hp_partners_sec ul{
+    list-style:none;
+    margin: 0 -10px;
+    padding:0;
+}
+.hp_partners_sec ul li{
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.hp_partners_sec ul li a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #ffffff;
+    border-left: 1px #262531 solid;
+    border-top: 1px #262531 solid;
+    border-right: 3px #262531 solid;
+    border-bottom: 3px #262531 solid;
+    padding: 14px 5px 17px;
+    row-gap: 6px;
+}
+
+.hp_partners_sec ul li a span{
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.14px;
+    color: #262531;
+    text-transform: uppercase;
+}
+.hp_partners_sec ul li:nth-child(2) a{
+    border-color: #5A863E;
+}
+.hp_partners_sec ul li:nth-child(3) a{
+    border-color: #CC2229;
+}
+.hp_partners_sec ul li:nth-child(4) a{
+    border-color: #D10256;
+}
+.hp_partners_sec ul li:nth-child(5) a{
+    border-color:#76C3FC ;
+}
+.hp_partners_sec ul li:nth-child(6) a{
+    border-color: #1E76F7;
+}
+.hp_partners_sec .sec_heading{
+    margin: 0 0 20px 0;
+}
+.hp_main_banner .hp_banner_left h1 {
+    line-height: 40px;
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width:1199px){
+    
+    .client_logo_new {
+        float: left;
+        width: 100%;
+    }
+    .client_logo_more{
+        float: left;
+        width: 100%;
+        text-align: center;
+        background: transparent linear-gradient(180deg, #FFFFFFC6 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        padding: 80px 0 0 0;
+        margin: -70px 0 0 0;
+        display: none;
+    }
+    .client_logo_more .btn{
+        display: inline-block;
+        border: 2px solid #F26322;
+        min-width: 230px;
+        background: transparent;
+        color: #F26322;
+        padding: 10px 30px 9px;
+    }
+    .client_logo_mn{
+        margin: 0 -10px;
+        list-style: none;
+        padding: 0;
+    }
+    .client_logo_mn li{
+        margin:10px;
+        background: #ffffff;
+        float: left;
+        width: calc(33.33% - 20px);
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        padding:6px 20px;
+    }
+    .hp_client_sec .client-sec-bot {
+        clear: both;
+        padding: 30px 0 0 0;
+    }
+
+
+
+
+    .hp_main_banner {
+        padding:35px 0 40px;
+    }
+    .mcdevice .hp_client_sec {
+        padding-top: 0;
+        padding-bottom:48px;
+    }
+    .hp_client_sec .client_head{
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        color: #070938;
+        text-transform: capitalize;
+        margin-bottom: 19px;
+        font-weight: 800;
+    }
+    .sec_heading {
+        line-height:32px;
+        margin: 0;
+        font-size:24px ;
+        letter-spacing: 0px;
+        color: #070938;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .project_sec {
+        padding:41px 0 40px 0;
+    }
+    .project_list {
+        padding: 11px 27px 20px;
+    }
+    .project_row > li.pro_left {
+        margin: 30px 0 0 0;
+    }
+    .project_head {
+        margin: 14px 0 10px 0;
+    }
+    .project_row > li {
+        float: left;
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    .project_sec .pro_btn{
+        text-align: center;
+    }
+    .btn{
+        display: inline-block;
+        width: 230px;
+    }
+    .ecommerce_service_services_section .sec_heading{
+        text-transform: none;
+    }
+    .service_list ul{
+        margin: 0 -5px;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service_list ul li{
+        float: left;
+        width: calc(50% - 10px);
+        padding:25px 10px;
+        margin: 5px 5px;
+        background: #fff;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        text-align: center;
+    }
+    .service_list ul li span img{
+        height: 34px;
+        float: left;
+    }
+    .service_list ul li p{
+        font-size:14px;
+        line-height:20px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        color: #121010;
+        margin: 5px 0 0 0;
+    }
+    .ecommerce_service_services_section .container,
+    .ecommerce_solution .container{
+        padding: 0 29px;
+    }
+    .service_list ul li span{
+        background: #C480FF;
+        display: inline-block;
+        padding: 19px;
+        border-radius: 50px;
+    }
+    .service_services_section  .service_list ul li:nth-child(2) span{
+        background: #80C4FF;
+    }
+    .service_services_section  .service_list ul li:nth-child(3) span{
+        background:#FFC980 ;
+    }
+    .service_services_section  .service_list ul li:nth-child(4) span{
+        background: #FF8080;
+    }
+    .service_services_section  .service_list ul li:nth-child(5) span{
+        background: #FF80F0;
+    }
+    .service_services_section  .service_list ul li:nth-child(6) span{
+        background:#C480FF ;
+    }
+    .service_services_section  .service_list ul li:nth-child(7) span{
+        background: #55D38F;
+    }
+    .service_services_section  .service_list ul li:nth-child(8) span{
+        background:#FF80A2 ;
+    }
+    .service_services_section {
+        padding: 51px 0px 45px 0px;
+    }
+    .service_services_section .sec_heading{
+        line-height: 32px;
+        margin: 0 0 25px 0;
+    }
+    .ecommerce_solution{
+        padding: 50px 0 35px 0;
+    }
+    .ecommerce_solution .service_list ul li span {
+        background: transparent;
+        display: inline-block;
+        padding: 0;
+        border-radius: 0;
+    }
+    .ecommerce_solution .service_list ul li span img{
+        height: 59px;
+    }
+    .ecommerce_solution .service_list ul li p{
+        font-size:16px;
+        height: 40px;
+        overflow: hidden;
+        margin: 9px 0 0 0;
+    }
+    .ecommerce_solution .service_list ul li{
+        padding: 29px 15px;
+    }
+    .ecommerce_solution .sec_heading{
+        margin: 0 0 22px 0;
+    }
+    .service_marketplace{
+        background: #FFFAF4;
+        padding:43px 0 41px 0;
+    }
+    .ecommerce_marketplace .sec_heading{
+        text-transform: none;
+        margin: 0 0 30px 0;
+        line-height: 32px;
+    }
+    .service_marketplace .container{
+        padding: 0 34px;
+    }
+    .service_marketplace .active .tab_content{
+        display: block;
+    }
+    .ser_mar_tab ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .ser_mar_tab ul li{
+        float: left;
+        width: 33.33%;
+        text-align: center;
+    }
+    .ser_mar_tab ul li img{
+        height: 39px;
+        margin: 0 auto;
+        background: transparent;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        padding: 2px 10px 1px;
+        display: flex;
+    }
+    .ser_mar_tab .tab-content-wrapper{
+        float: left;
+        width: 100%;
+        margin: 30px 0 0 0;
+        padding: 0 10px;
+    }
+    .ser_mar_tab ul li.active img{
+        background: #FDECD8;
+        border: 2px solid #FFD595;
+        border-radius: 5px;
+        padding: 2px 10px 1px;
+    }
+    .service_marketplace .tab_content{
+        background: #F8E0BB;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+        border: 5px solid #FFFFFF;
+        border-radius: 20px;
+        padding: 17px 20px 17px;
+    }
+    .service_marketplace .tab_content h3{
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+    .service_marketplace .tab_content p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .service_marketplace .tab_content p:last-child{
+        margin: 12px auto 10px;
+        max-width: 236px;
+    }
+    .service_solutions .sec_heading{
+        text-transform: none;
+        margin: 0 0 30px 0;
+    }
+    .service_solutions{
+        background: transparent;
+        padding: 50px 0 47px 0;
+    }
+    .service_solutions .pricing_model_sec .Block {
+        background: url('../../../../uploads/2023/06/acc_drop_plus.svg') no-repeat right 18px top 17px;
+    }
+    .service_solutions .pricing_model_sec .Block.current {
+        background: url('../../../../uploads/2023/06/acc_drop_Minus.svg') no-repeat right 18px top 23px;
+    }
+    .service_solutions .pricing_model_sec .Block,
+    .service_solutions .pricing_model_sec .Block.current{
+        border-radius: 0px;
+    }
+    .service_solutions .pricing_model_sec .Block{
+        margin-bottom: 10px;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(1) {
+        background-color: #F4F9FF;
+        border-color: #F4F9FF;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(2) {
+        background-color: #FFF2F2;
+        border-color: #FFF2F2;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(3) {
+        background-color: #FAFFEA;
+        border-color: #FAFFEA;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(4) {
+        background-color: #EAFFEC;
+        border-color: #EAFFEC;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(5) {
+        background-color: #EEEAFF;
+        border-color: #EEEAFF;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(6) {
+        background-color: #EAFFFF;
+        border-color: #EAFFFF;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(7) {
+        background-color: #FFE8F6;
+        border-color: #FFE8F6;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(8) {
+        background-color: #E3FFE7;
+        border-color: #E3FFE7;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(9) {
+        background-color: #FFFCEA;
+        border-color: #FFFCEA;
+    }
+    .service_solutions .pricing_model_sec .Block:nth-child(10) {
+        background-color: #EEEAFF;
+        border-color: #EEEAFF;
+    }
+    .service_solutions .pricing_model_sec .Block:last-child{
+        margin-bottom: 0px;
+    }
+    .hp_blog_sec .pro_btn{
+        text-align: center;
+    }
+    .pricing_model_sec .service_list ul{
+        margin: 0 -8px;
+        padding: 0px 13px 20px;
+    }
+    .pricing_model_sec .service_list ul li{
+        width: calc(50% - 16px);
+        margin: 8px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+        padding: 29px 10px 28px;
+    }
+    .pricing_model_sec .service_list ul li span {
+        background: transparent;
+        padding: 0;
+        vertical-align: top;
+    }
+    .pricing_model_sec .service_list ul li p{
+        margin: 12px 0px 0px;
+    }
+    .pricing_model_sec .service_list ul li span img {
+        height: auto;
+        display: block;
+    }
+    .why_choose_sec .sec_heading{
+        padding: 0px 22px;
+    }
+    .why_choose_sec{
+        padding: 3px 0 0 0;
+    }
+    .why_choose_sec .sec_heading,
+    .ecommerce_solution .sec_heading,
+    .manage_support_sec .sec_heading{
+        text-transform: none;
+    }
+    .manage_support_sec{
+        padding:40px 0 38px 0;
+        background: #FAFAFA;
+    }
+    .manage_support_sec .container{
+        padding: 0 18px;
+    }
+    .mng_spt_inr{
+        border: none;
+        border-radius: 0;
+        margin:8px 0 0 0;
+    }
+    .mng_spt_right{
+        background: transparent;
+        padding: 0;
+    }
+    .eCommerce_support_sec .mng_spt_right ul{
+        margin: 0 auto;
+        max-width: 270px;
+    }
+    .eCommerce_support_sec .mng_spt_right ul li:before{
+        background: #5F3232;
+        border-radius: 50px;
+        width: 8px;
+        height: 8px;
+        top: 8px;
+    }
+    .mng_spt_right ul li{
+        padding-left: 14px;
+        line-height: 25px;
+        margin: 0 0 10px 0;
+    }
+    .mng_spt_left{
+        background: #FFFFFF;
+        border: 2px solid #C6EEFC;
+        border-radius: 20px;
+        margin: 21px 0 0 0;
+        padding: 23px 17px 5px;
+    }
+    .mng_spt_left h3{
+        margin: 0 0 20px 0;
+    }
+    
+    .manage_support_form .wpcf7-list-item input:checked ~ .wpcf7-list-item-label{
+        background: #C6EEFC;
+        border: 1px solid #2680EB;
+    }
+    .fl_name.multicols .col-label{
+        font-weight: 600;
+    }
+    .manage_support_form .submit_btn p {
+        margin: 30px 0 0 0;
+    }
+    .hp_client_sec .container{
+        padding: 0;
+    }
+    .client_logo_new .container{
+        padding: 0 20px;
+    }
+    .slick-carousel-video .slick-dots {
+        bottom: -29px;
+    }
+    .hp_banner_left h1{
+        line-height: 40px !important;
+        letter-spacing: 0;
+        margin: 0 0 26px 0;
+    }
+    .hp_banner_left p{
+        font-weight: 400 !important;
+        line-height: 28px;
+    }
+    .hp_main_banner .serv.ban_bottom_btn {
+        margin-top: 18px;
+        margin-bottom: 22px;
+    }
+    .manage_support_form .multicols-text input::placeholder,
+    .manage_support_form .multicols-text input::-webkit-input-placeholder,
+    .manage_support_form .multicols-text input::-moz-placeholder{
+        color: #070938;
+    }
+    .wpcf7-spinner{
+        margin-top: 5px !important;
+    }
+    .wpcf7 form .wpcf7-response-output{
+        margin-top: 0 !important;
+    }
+    .why_choose_sec .sec_heading {
+        margin: 0 0 23px 0;
+    }
+    .pricing_model_sec .Block.current .solutions_mob_img {
+        display: flex;
+    }
+    .pricing_model_sec .Block .solutions_mob_img {
+        display: none;
+        background: #fff;
+        text-align: center;
+        padding:10px 10px;
+        margin: 8px 0 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .pricing_model_sec .Block .solutions_mob_img img{
+        max-width: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 479px){
+    .hp_banner_left p{
+        padding: 0 5px;
+    }
+    .client_logo_mn li {
+        display: none;
+        width: calc(50% - 20px);
+    }
+    .client_logo_more {
+        display: block;
+    }
+    .hp_client_sec .client_head{
+        margin-left: auto;
+        margin-right: auto;
+    }
+	.Listing_outer{
+		margin-left: -5px;
+	}
+	.Listing_outer .hex{
+		height: 80px;
+		width: 80px;
+		margin: 11px 11px;
+	}
+	.partners_left .btn {
+		margin: 39px 0 0 0;
+	}
+    .eCommerce_support_sec .sec_heading br{
+        display: block;
+    }
+    .service_services_section .bds_img_head h3{
+        padding-right:30px;
+    }
+    .hp_partners_sec ul li a span{
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .hp_partners_sec .container{
+        padding: 0 36px;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    
+.hp_main_banner .hp_banner_left h1 {
+    line-height: 40px;
+    font-size: 34px;
+}
+    .service_solutions .slick-slide > div{
+        max-width: 330px;
+    }
+    .Listing_outer .hex {
+        height: 75px;
+        width: 75px;
+    }
+    .hp_mob_banner img {
+        max-width: 100%;
+    }
+    .client_logo_new div{
+        column-gap: 20px;
+    }
+    .service_marketplace .container {
+        padding: 0 20px;
+    }
+    .pricing_model_sec .service_list ul{
+        padding: 0px 0 20px;
+    }
+    
+    .hp_client_sec .client_head{
+        padding: 0 10px;
+    }
+    .hp_client_sec .client_head,
+    .sec_heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .ecommerce_service_services_section .container, .ecommerce_solution .container {
+        padding: 0 20px;
+    }
+    .pricing_model_sec .Block .sub-title1{
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .hp_partners_sec ul li{
+        width: 50%;
+    }
+    .hp_partners_sec .container{
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 374px){
+	.Listing_outer{
+		margin-left: -7px;
+	}
+	.Listing_outer .hex{
+		height: 65px;
+		width: 65px;
+		margin: 10px;
+	}
+
+}

@@ -1,0 +1,1208 @@
+
+@media only screen and (max-width: 767px) {
+    .cms_page ul li h3 strong{
+        margin-right: 6px;
+    }
+    .letstalk_sec .letstalk_left .ftheading{
+        line-height: 50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    div.ban_bottom_btn .btn.scheacall_icon {
+        padding: 8px 32px 11px;
+    }
+    /* Hamburger Menu Start */
+    .mega-hamburger-menumob {
+        position: fixed;
+        right: 0;
+        background: rgba(0, 0, 0,0.5);
+        width:100%;
+        top:0;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: all .5s ease;
+        height: 100%;
+        bottom: 0;
+        z-index:999;
+        transform: translate(100% , 0%);
+    }
+    .mega-hamburger-menumob.active {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+    .mega-hamburger-menumob ul.menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+        width: 100%;
+        height: calc(100% - 65px);
+        overflow-x: scroll;
+    }
+    .mega-hamburger-menumob .mega-hamburger_bg{
+        width: 400px;
+        background: #10629b;
+        float: right;
+        padding: 20px 20px 30px 30px;
+        -webkit-box-shadow: -6px 15px 16px 0px rgba(0,0,0,0.29);
+        -moz-box-shadow: -6px 15px 16px 0px rgba(0,0,0,0.29);
+        box-shadow: -6px 15px 16px 0px rgba(0,0,0,0.29);
+        height: 100%;
+        overflow: hidden;
+    }
+    .mega-hamburger-menumob .mega-hamburger_bg .request_btn{
+        float: right;
+        width: auto;
+        padding: 0 15px 0 0;
+        border-right: 1px #fff solid;
+        margin: 0 34px 20px 0;
+    }
+    .mega-hamburger-menumob .mega-hamburger_bg .request_btn .btn{
+        display: inline-block;
+        float: right;
+    }
+    .mega-hamburger-menumob ul.menu li:first-child > a{
+        margin-top: 0;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item {
+        width:100%;
+        float: left;
+    }
+    .mega-hamburger-menumob ul.menu .menu-item a {
+        color: #fff;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item > a{
+        font-size: 24px;
+        letter-spacing: 0;
+        font-weight: 700;
+        margin: 15px 0 0 0;
+        display: inline-block;
+        line-height: 44px;
+    }
+    .menutit{
+        cursor: pointer;
+    }
+    .mega-hamburger-menumob span.menu-close-btn {
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        display: block;
+        margin: auto;
+        background-size: 19px;
+        background-color: #10629b;
+        background-image: url('../images/close_menu_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-size: 0;
+        cursor: pointer;
+    }
+    .mega-hamburger-menumob span.menu-close-btn a.close-menu {
+        height: 19px;
+        width: 19px;
+        display: inline-block;
+    }
+    .mainmenu > ul > li .sub-menu > li {
+        margin: 0px 0px 10px;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item ul.sub-menu {
+        list-style: none; padding-left: 0px;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item ul.sub-menu li {
+        margin: 0px 0px 5px;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item ul.sub-menu li > a {
+        font-size: 15px;
+        padding: 0 0 0 22px;
+        letter-spacing: .8px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 0;
+        color: #fff;
+        position: relative;
+        display: inline-block;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item ul.sub-menu li > a:hover
+    {	color:#f26322;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item ul.sub-menu li > a:before {
+        position: absolute;
+        border-radius: 50px;
+        content: "";
+        width: 5px;
+        height: 5px;
+        top: 8px;
+        left: 0;
+        background: #f1612d;
+    }
+    body.menuopen{
+        overflow: hidden;
+    }
+    .menuopen .header .right .menu{
+        position: relative;
+        float: right;
+    }
+    .menuopen .header .right .menu::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 9;
+    }
+    /* Hamburger Menu End */
+    .faq_page.case_study_banner {
+        clear: both;
+        padding: 60px 0px 60px 0px;
+    }
+    .faq_content div#prodAccordion {
+        margin: 0px 0px 60px;
+    }
+    .all-bubble.gray.right,
+    .all-bubble.green,
+    .all-bubble.yellow {
+        display: none;
+    }
+    .faq_content .sub-title1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .sitemap_banner {
+        padding: 60px 0;
+    }
+    .about_solution_lt {
+        margin: 0 10px 0 0;
+        width: calc(65% - 10px);
+    }
+    .about_solution_rt {
+        margin: 0 0 0 10px;
+        width: calc(35% - 10px);
+    }
+    .about_solution_sec {
+        padding: 0 0 60px 0;
+    }
+    .services_box_mn {
+        margin: 0 -7px;
+    }
+    .services_box {
+        padding: 0 7px;
+    }
+    .work_portfolio_list_mn {
+        margin: 0 -7px;
+    }
+    .work_portfolio_list {
+        margin: 0 7px;
+        width: calc(33.33% - 14px);
+    }
+    .sitemap_box_title {
+        padding-right: 20px;
+    }
+    .top_bdr {
+        border-top: 30px #fff solid;
+    }
+    .work_portfolio_sec {
+        padding: 0 0 60px 0;
+    }
+    .insights_sec_lt {
+        padding: 0 7px 0 0;
+    }
+    .insights_sec_rt {
+        padding: 0 0 0 7px;
+    }
+    .insights_sec,
+    .case_studies_sec {
+        padding: 0 0 60px 0;
+    }
+    .services_sec {
+        padding: 0 0 40px 0;
+    }
+    .cms_page {
+        padding: 60px 0 15px 0;
+    }
+    .cms_page.refund-policy {
+        padding: 60px 0 30px 0;
+    }
+    .cms_page h2 {
+        margin: 0 0 30px 0;
+    }
+    .cms_page h1 {
+        margin: 0 0 30px 0;
+    }
+    .cms_page.terms_conditions {
+        padding: 60px 0 40px 0;
+    }
+    .service_main_banner{
+        clear: both;
+        padding: 60px 0;
+    }
+    .service_main_banner .ser_left {
+        padding-top: 0;
+        position: relative;
+        width: 100%;
+    }
+    .case_study_services,
+    .case_study_slider{
+        padding: 60px 0;
+    }
+    .mobile_first{
+        padding:20px 0 60px 0;
+    }
+    .our_solution{
+        padding: 60px 0 0 0;
+    }
+    .case_study_services h3{
+        margin-top: 0;
+    }
+    .case_study_services_lt {
+        width: 220px;
+        padding-right:15px;
+    }
+    .case_study_services_rt {
+        width: calc(100% - 220px);
+    }
+    .case_study_services h3 {
+        font-size: 24px;
+    }
+    .case_study_slider .container{
+        padding: 0 40px;
+    }
+    /*.mobile_first_btn .btn{
+        width: 100%;
+    }*/
+    .ser_left h1{
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .portfolio_list_lt {
+        width: 250px;
+        padding-right: 15px;
+    }
+    .portfolio_list_rt,
+    .more_portfolio{
+        width: calc(100% - 250px);
+    }
+    .portfolio_list_rt ul {
+        margin: 0 -10px;
+    }
+    .portfolio_list_rt li{
+        padding: 0 10px;
+    }
+    .portfolio_list_rt li a img.project_logo{
+        padding: 0 20px;
+    }
+    .portfolio_list_lt .pro_list_title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .service_main_banner .ser_left {
+        padding-top: 0;
+    }
+    .stats .stats-list {
+        padding: 60px 0px 0px;
+        margin: 60px 0px 0px;
+    }
+    .stats .stats-list .stat-item .title {
+        font-size: 64px;
+        line-height: 60px;
+        justify-content: space-between;
+    }
+    .our_solution_img{
+        margin-bottom: 60px;
+        padding: 50px;
+    }
+    .mobile_first_rt{
+        margin-bottom: 40px;
+    }
+    .mobile_first_lt {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        padding: 70px 25px;
+    }
+    .mobile_first_rt {
+        width: calc(50% - 10px);
+        margin-left: 10px;
+    }
+    .mobile_first_lt img {
+        width: calc(50% - 20px);
+        margin: 0 10px;
+    }
+    .discovery_phase{
+        padding: 60px 0 50px 0;
+    }
+    .serv.ban_bottom_btn {
+        display: block;
+        margin: 18px 0px 0px 0px;
+    }
+    .service_main_banner h1{
+        margin: 0;
+    }
+    .service_main_banner.certified_partners_banner h1,
+    .service_main_banner.showcase_main_banner h1 {
+        font-size: 18px;
+        line-height: 36px;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+    .service_main_banner.certified_partners_banner h1{
+        margin: 0 0 20px 0;
+    }
+    .service_main_banner p.ser_sub_head {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 100%;
+    }
+    .service_main_banner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .ban_bottom_btn .btn.get_st_btn{
+        font-weight: 400;
+        border: 2px solid #F26322;
+        background-image: none;
+        background-color: #fff;
+        color: #F26322;
+        padding: 10px 67px 9px;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .ban_bottom_btn .btn.get_st_btn:hover{
+        border-color: #35ade3;
+        color: #fff;
+    }
+    .ban_bottom_btn .btn.scheacall{
+        background: #F26322;
+        padding: 12px 32px 11px ;
+    }
+    .service_main_banner .all-bubble.big.sky-blue {
+        background: #5C85E5;
+        opacity: 0.22;
+        filter: blur(7px);
+        height: 80px;
+        width: 80px;
+        top: 80px;
+        right: 30px;
+        z-index: 1;
+    }
+    .service_main_banner .all-bubble.red,
+    .service_main_banner .all-bubble.blue,
+    .service_main_banner .all-bubble.dark-blue,
+    .service_main_banner .all-bubble.green,
+    .service_main_banner .all-bubble.yellow,
+    .service_main_banner .all-bubble.gray,
+    .discovery_phase .all-bubble,
+    .project_process .all-bubble,
+    .how_we_de .all-bubble,
+    .service_main_banner .ser_right,
+    .faq_page .all-bubble{
+        display: none;
+    }
+    .how_we_de{
+        padding: 0 0 45px 0;
+    }
+    .how_we_de_box{
+        width: 50%;
+        padding: 17px;
+    }
+    .faq{
+        margin-bottom: 30px;
+    }
+    .project_process{
+        padding: 60px 0;
+    }
+    .project_process_lt h5{
+        font-size: 16px;
+        line-height: 18px;
+        padding: 15px 10px 13px 15px;
+    }
+    .project_process_lt{
+        width: 280px;
+    }
+    .project_process_rt{
+        width: calc(100% - 300px);
+        margin-left:20px;
+    }
+    .project_process_rt h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .project_process_rt h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .as_soon_as{
+        margin: 0 0 15px 0;
+    }
+    .next_prev_btn .btn{
+        width: 100%;
+        border: none;
+    }
+    .faq_podio{
+        padding: 0 0 60px 0;
+    }
+    .certified_overview{
+        padding: 60px 0;
+    }
+    .platform_list{
+        margin:30px -7px 0px;
+    }
+    .platform_list .plat_call{
+        padding: 0 7px;
+        width: 33.33%;
+    }
+    .platform_list .plat_call .plat_call_inner .plat_img{
+        padding: 0 40px;
+    }
+    .plat_sec{
+        padding: 0px 0px 33px;
+    }
+    .explore_our_services_sec {
+        padding: 0px 0px 60px;
+    }
+    .explore_our_services_inner{
+        padding: 40px 20px;
+    }
+    .plan_section_mn{
+        margin: 0;
+    }
+    .plan_list_text{
+        font-size: 14px;
+    }
+    .mobile-section .plan_section_mn .btn {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 7px 15px 6px;
+        display: inline-block;
+    }
+    .plan_list_mark p {
+        margin: 7px 0 11px 0;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .header_sec_pro span {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .plan_list{
+        height: 65px;
+    }
+    .plan_list.plan_list_header{
+        height: auto;
+    }
+    .plan_section{
+        padding: 0 0 60px 0;
+    }
+    .bigcommerce_overview{
+        padding: 60px 0 0 0;
+    }
+    .bigcommerce_overview .bc_ovr_left {
+        width: 100%;
+    }
+    .bigcommerce_overview .bc_ovr_right {
+        padding: 0;
+        width: 100%;
+        float: left;
+    }
+    .showcase_list_sec {
+        margin: 60px 0 0;
+    }
+    .portfolio_btn{
+        clear: both;
+    }
+    .showcase_list_sec .app_listing{
+        margin: 0 0 60px 0;
+    }
+    .showcase_main_banner .ser_left h1{
+        margin: 0 0 20px 0;
+    }
+    .partner_work_list{
+        margin: 60px 0;
+    }
+    .partner_work_list .container .partner_col_sec:nth-child(2){
+        padding: 50px 0;
+    }
+    .service_listing_sec{
+        margin: 60px 0 0 0;
+    }
+    .service_listing_sec .ser_col h3 {
+        margin: 0px 0px 10px;
+        font-size: 22px;
+    }
+    .service_listing_sec .ser_col ul li{
+        margin: 0px 0px 10px;
+    }
+    .service_listing_sec .ser_col ul li:before{
+        top: 4px;
+    }
+    .service_listing_sec .service_listing_inner{
+        margin: 0px -17px 60px;
+    }
+    .faq_content{
+        position: relative;
+    }
+    .cms_page ul li h2 strong{
+        width: 40px;
+    }
+    .cms_page ul li h3{
+        padding-left: 43px;
+    }
+    .cms_page ul li p {
+        padding-left: 43px;
+    }
+    .refund-policy li{
+        padding-left: 40px;
+    }
+    .terms_conditions ul ul li {
+        padding-left: 40px;
+    }
+    .faq .faq_content{
+        float: left;
+        width: 100%;
+    }
+    .mobile-section .faq .lighted_head {
+        background: #16B49B;
+    }
+    .mobile-section .ser_left .lighted_head {
+        background: #0F53F9;
+    }
+    .mobile-section .how_we_de .lighted_head {
+        background: #0E61DB;
+    }
+    .mobile-section .technology_partner_sec .lighted_head {
+        background: #0E61DB;
+    }
+    .mobile-section .cloud_server_partner_sec .lighted_head {
+        background: #16B49B;
+    }
+    .mobile-section .Payment_partner_sec .lighted_head {
+        background: #F26322;
+    }
+    .faq_page.case_study_banner h1,
+    .sitemap_banner h1,
+    .cms_page h1{
+        font-size: 30px;
+    }
+    .letstalk_sec .letstalk_left .ftheading {
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    
+    /* Hamburger Menu Start */
+    .mega-hamburger-menumob .mega-hamburger_bg{
+        width: 320px;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item > a {
+        font-size: 20px;
+    }
+    /* Hamburger Menu End */
+    .faq_page.case_study_banner h1,
+    .sitemap_banner h1 {
+        font-size: 28px;
+        line-height: 40px;
+        margin: 0;
+    }
+    .cms_page h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .cms_page h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .faq_page .all-bubble.big.sky-blue,
+    .sitemap_banner .all-bubble.big.sky-blue,
+    .cms_page .all-bubble.big.sky-blue {
+        height: 90px;
+        width: 90px;
+        left: -60px;
+    }
+    .faq_page .all-bubble.blue,
+    .sitemap_banner .all-bubble.blue,
+    .cms_page .all-bubble.blue {
+        height: 70px;
+        width: 70px;
+    }
+    .faq_content .current .sub-title1 {
+        padding-bottom: 0;
+    }
+    .about_solution_sec .ftheading,
+    .services_sec .ftheading,
+    .case_studies_sec .ftheading,
+    .work_portfolio_sec .ftheading,
+    .insights_sec .ftheading {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+    }
+    .about_solution_flex {
+        display: block;
+    }
+    .about_solution_lt {
+        margin: 0 0 30px 0;
+        width: 100%;
+    }
+    .about_solution_rt {
+        margin: 0;
+        width: 100%;
+    }
+    .services_box {
+        padding: 0;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .services_box_mid .services_box_bg_bot,
+    .services_box_rt .services_box_bg_bot,
+    .services_box_rt .services_box_bg_top {
+        min-height: auto;
+    }
+    .services_box_rt .services_box_bg_bot,
+    .services_box_mid .services_box_bg_bot {
+        margin: 30px 0 0 0;
+    }
+    .services_box_mn,
+    .work_portfolio_list_mn {
+        margin: 0;
+    }
+    .case_studies_list_col {
+        width: 100%;
+        padding: 0;
+    }
+    .case_studies_list,
+    .work_portfolio_list_bg {
+        padding: 20px 20px 15px;
+    }
+    .work_portfolio_list_mn {
+        display: block;
+    }
+    .work_portfolio_list {
+        margin: 0;
+        width: 100%;
+    }
+    .work_portfolio_list_bg {
+        border-top: 30px #fff solid;
+    }
+    .top_bdr {
+        border-top: 30px #fff solid;
+    }
+    .work_portfolio_list_lt>.work_portfolio_list_bg:first-child {
+        border: none;
+    }
+    .insights_sec_list_bg {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .insights_sec_lt {
+        padding: 0;
+        width: 100%;
+    }
+    .insights_sec_rt {
+        padding: 0;
+        width: 100%;
+    }
+    .insights_sec_lt .insights_sec_list_bg {
+        padding-bottom: 17px;
+    }
+    .insights_sec_rt .insights_sec_list_bg {
+        padding-top: 0;
+    }
+    .insights_sec_list_bg .page_url_list li:last-child {
+        margin: 0;
+    }
+    .sitemap_box_title {
+        padding-bottom: 7px;
+    }
+    .cms_page ul li h2 {
+        font-size: 18px;
+    }
+    .cms_page ul li h3 {
+        margin-top: 10px;
+        padding-left: 46px;
+    }
+    .cms_page ul li p {
+        padding-left: 46px;
+    }
+    .refund-policy li {
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+    .cms_page.refund-policy {
+        padding: 60px 0 40px 0;
+    }
+    .cms_page.terms_conditions ul li h3{
+        font-size: 18px;
+        margin-top: 35px;
+        padding-left: 35px;
+        margin-bottom: 0;
+    }
+    .cms_page.terms_conditions ul li h2 {
+        margin-bottom: 0;
+    }
+    .cms_page.terms_conditions ul li h2 strong{
+        width: 35px;
+    }
+    .cms_page.terms_conditions ul li p {
+        padding-left: 35px;
+    }
+    .terms_conditions ul ul li {
+        padding-left: 35px;
+    }
+    .terms_conditions ul ul li:before{
+        width: 20px;
+        height: 23px;
+        background-position: left top 3px;
+    }
+    .cms_page.terms_conditions ul li h3 strong{
+        margin-right: 8px;
+    }
+    .ser_left h1{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .ser_left p{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .case_study_services_lt {
+        width: 100%;
+        padding-right:0;
+        padding-bottom: 20px;
+    }
+    .case_study_services_rt {
+        width:100%;
+        margin-top: -50px;
+    }
+    .case_study_services h3.top_mar {
+        margin: 30px 0 0 0;
+    }
+    .case_study_services h3{
+        margin: 0;
+    }
+    .our_solution h6{
+        margin: 25px 0 6px 0;
+    }
+    .portfolio_list_lt {
+        width: 100%;
+        padding:0 0 20px 0;
+    }
+    .portfolio_list_rt{
+        width:100%;
+        margin: 0 0 50px 0;
+    }
+    .more_portfolio{
+        width: 100%;
+    }
+    .our_solution_img{
+        margin-top: 0;
+        padding: 30px;
+    }
+    .how_we_de_box_mn {
+        margin: 0 -10px;
+    }
+    .how_we_de_box {
+        padding: 10px;
+    }
+    .faq_lt {
+        width: 100%;
+        padding-right: 0;
+    }
+    .faq_rt {
+        width: 100%;
+        padding-left: 0;
+    }
+    .project_process_lt {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .project_process_rt {
+        width:100%;
+        margin-left: 0;
+    }
+    .faq_podio .box_bdr {
+        padding: 15px 30px 15px;
+    }
+    .faq_podio .box_title {
+        margin: 10px 0 0 0;
+    }
+    .faq_podio ul{
+        margin: 0 -7px;
+    }
+    .faq_podio li{
+        padding: 0 7px;
+    }
+    .platform_list .plat_call {
+        width: 50%;
+    }
+    .Payment_partner_sec .platform_list .plat_call {
+        width: 50%;
+    }
+    .explore_our_services_inner p {
+        padding: 0px;
+    }
+    .explore_our_services_inner h3{
+        margin: 0px 0px 5px;
+    }
+    .explore_our_services_inner {
+        padding: 20px 20px 30px;
+    }
+    .plan_section_mn{
+        overflow-x: auto;
+    }
+    .plan_section_mn_scroll{
+        width: 800px;
+    }
+    .app_listing .ap_list_col.img_col{
+        width:50%;
+        padding: 0px 15px;
+    }
+    .app_listing .ap_list_col.content_col{
+        width:50%;
+        padding: 0px 15px;
+    }
+    .app_listing h3{
+        margin: 0 0 10px 0;
+    }
+    .partner_col_sec{
+        flex-flow: column;
+    }
+    .partner_col{
+        width: 100%;
+    }
+    .partner_work_list .container .partner_col_sec:nth-child(2) .partner_col.content{
+        order: -1;
+    }
+    .partner_work_list .container .partner_col_sec .partner_col.content{
+        margin: 0 0 30px 0;
+    }
+    .partner_work_list .container .partner_col_sec .partner_col.content ul{
+        padding: 0 0 0 20px;
+    }
+    .partner_work_list .container .partner_col_sec .partner_col.content li{
+        margin: 0 0 10px 0;
+    }
+    .service_listing_sec .service_listing_inner{
+        margin: 0px 0 60px 0;
+        flex-flow: column;
+    }
+    .service_listing_sec .ser_col{
+        width: 100%;
+        padding: 0;
+    }
+    .service_listing_sec .ser_col.content{
+        margin: 0 0 20px 0;
+    }
+    .service_listing_sec .service_listing_inner.web-dev .ser_col.content,
+    .service_listing_sec .service_listing_inner.cus-web-des .ser_col.content,
+    .service_listing_sec .service_listing_inner.Res-dri-dig .ser_col.content{
+        order: -1;
+    }
+    .faq_content .sub-title1{
+        padding-right:40px;
+    }
+    .faq_content .Block.Panel{
+        padding: 0px 20px;
+    }
+
+}
+@media only screen and (max-width: 479px) {
+    
+    .mobile_first_lt{
+        width: 100%;
+        margin:30px 0 50px 0;
+    }
+    .mobile_first_rt{
+        width: 100%;
+        margin:30px 0 0 0;
+        order: -1;
+    }
+    .mobile_first .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hamburger Menu Start */
+    .mega-hamburger-menumob .mega-hamburger_bg{
+        width: 100%;
+        box-shadow: none;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item ul.sub-menu li > a{
+        padding: 0 0 8px 14px;
+        display: block;
+    }
+    .mega-hamburger-menumob .mega-hamburger_bg{
+        padding: 20px 25px 30px 25px;
+    }
+    /* Hamburger Menu End */
+    .faq_page.case_study_banner h1,
+    .sitemap_banner h1,
+    .cms_page h2,
+    .cms_page h1,
+    .ser_left h1,
+    .service_main_banner .ser_left h1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .faq_page.case_study_banner{
+        padding: 40px 0px 15px 0px;
+    }
+    .sitemap_banner {
+        padding: 40px 0px 15px 0px;
+    }
+    .Block.Panel.current {
+        padding: 0px 15px 25px 15px;
+    }
+    .Block.Panel {
+        padding: 0 15px 0 15px;
+    }
+    .faq_content .sub-title1 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .faq_content .sub-title1:after {
+        right: -5px;
+    }
+    .faq_content .sub-title1 {
+        padding-right: 20px;
+    }
+    .about_solution_sec .ftheading,
+    .services_sec .ftheading,
+    .case_studies_sec .ftheading,
+    .work_portfolio_sec .ftheading,
+    .insights_sec .ftheading {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+    .about_solution_lt {
+        padding: 20px 20px 15px;
+    }
+    .about_solution_list {
+        width: 100%;
+    }
+    .page_url_list li {
+        margin: 0 0 5px 0;
+    }
+    .about_solution_rt {
+        padding: 20px 20px 15px;
+    }
+    .about_solution_sec {
+        padding: 0 0 40px 0;
+    }
+    .services_box_bg {
+        padding: 20px 20px 15px 20px;
+    }
+    .sitemap_box_title {
+        padding-right: 0;
+    }
+    .sitemap_box_title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .page_url_list li a {
+        font-size: 14px;
+    }
+    .services_box_rt .services_box_bg_bot,
+    .services_box_mid .services_box_bg_bot {
+        margin: 20px 0 0 0;
+    }
+    .services_box {
+        margin: 0 0 20px 0;
+    }
+    .services_sec {
+        padding: 0 0 20px 0;
+    }
+    .work_portfolio_sec {
+        padding: 0 0 40px 0;
+    }
+    .cms_page a {
+        word-break: break-all;
+    }
+    .cms_page ul li h2 strong {
+        width: 30px;
+    }
+    .cms_page ul li h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .cms_page ul li h3 strong {
+        margin-right: 5px;
+    }
+    .cms_page ul li h3 {
+        padding-left: 30px;
+    }
+    .cms_page ul li p {
+        padding-left: 30px;
+    }
+    .case_study_services h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .our_solution h3{
+        font-size: 24px;
+    }
+    .portfolio_list_rt ul {
+        margin: 0;
+    }
+    .portfolio_list_rt li {
+        padding: 0;
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    .portfolio_list_rt li:nth-child(2n) {
+        margin: 30px 0 0 0;
+    }
+    .stats .stats-list{
+        display: block;
+    }
+    .stats .stats-list .stat-item{
+        float: left;
+        width: 100%;
+    }
+    .stats .stats-list .stat-item:nth-child(2){
+        margin: 30px 0;
+    }
+    .stats .stats-list .stat-item .title{
+        margin: 0;
+    }
+    .stats .stats-list .stat-item .text{
+        margin: 10px 0 0 0;
+        font-size: 54px;
+        line-height: 50px;
+    }
+    .how_we_de_box_mn {
+        margin: 0;
+    }
+    .how_we_de_box {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .faq li{
+        margin: 0 0 15px 0;
+    }
+    .faq li .faq_title{
+        padding: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .faq li .faq_title img,
+    .faq li .faq_title.active img {
+        margin: 5px 10px 0 0;
+    }
+    .faq .faq_content{
+        padding: 4px 10px 10px 38px;
+    }
+    .faq_content p{
+        margin-bottom: 15px;
+    }
+    .faq_podio ul{
+        display: block;
+        margin: 0;
+    }
+    .faq_podio ul li{
+        width: 100%;
+        padding: 0;
+        margin:10px 0;
+    }
+    .platform_list {
+        margin: 30px 0 0px 0;
+    }
+    .platform_list .plat_call,
+    .Payment_partner_sec .platform_list .plat_call {
+        width: 100%;
+        padding: 0;
+    }
+    .showcase_list_sec .app_listing{
+        display: block;
+        padding:40px 20px;
+    }
+    .app_listing .ap_list_col.img_col {
+        width: 100%;
+        padding:0 0 15px 0;
+    }
+    .app_listing .ap_list_col.content_col{
+        width: 100%;
+        padding:15px 0 0 0;
+    }
+    .showcase_list_sec .app_listing.p3venapp,
+    .showcase_list_sec .app_listing.ppapp,
+    .showcase_list_sec .app_listing.cowoapp,
+    .showcase_list_sec .app_listing.wrapp,
+    .showcase_list_sec .app_listing.sdapp {
+        display: flex;
+        flex-flow: column;
+    }
+    .showcase_list_sec .app_listing.p3venapp .img_col,
+    .showcase_list_sec .app_listing.ppapp .img_col,
+    .showcase_list_sec .app_listing.cowoapp .img_col,
+    .showcase_list_sec .app_listing.wrapp .img_col,
+    .showcase_list_sec .app_listing.sdapp .img_col{
+        order: -1;
+    }
+    .app_listing h3 {
+        font-size: 24px;
+    }
+    .service_listing_sec .ser_col .content_inner{
+        padding: 20px;
+    }
+    .cms_page.terms_conditions {
+        padding: 40px 0 40px 0;
+    }
+    .cms_page {
+        padding: 40px 0 15px 0;
+    }
+    .cms_page h1,
+    .cms_page h2{
+        margin: 0;
+    }
+    .cms_page.refund-policy h1{
+        margin: 0 0 10px 0;
+    }
+    .cms_page.refund-policy {
+        padding: 40px 0 ;
+    }
+    .cms_page.privacy-policy p br{
+        display: block;
+    }
+    .sitemap_banner h1{
+        text-align: left;
+    }
+    .mobile-section .about_solution_sec .ftheading,
+    .mobile-section .services_sec .ftheading,
+    .mobile-section .case_studies_sec .ftheading,
+    .mobile-section .work_portfolio_sec .ftheading,
+    .mobile-section .insights_sec .ftheading{
+        margin:0 0 10px 0;
+    }
+    .faq_page.case_study_banner h1,
+    .sitemap_banner h1{
+        line-height: 28px;
+    }
+    .refund-policy li{
+        padding-left: 0;
+    }
+    
+}
+@media only screen and (max-width: 413px) {
+    .mobile-section .lighted_head,
+    .ftheading,
+    .lighted_head,
+    .sec_heading,
+    .hp_main_banner .hp_banner_left h1{
+        font-size: 16px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .mega-hamburger-menumob ul.menu > .menu-item > a {
+        font-size: 19px;
+    }
+}

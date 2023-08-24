@@ -1,0 +1,350 @@
+.header{
+    background:#F7F8FA;
+}
+.service_main_banner{
+    background-color:#F7F8FA;
+    padding: 130px 0 80px 0;
+}
+.ser_right {
+    padding: 24px 0px 0px 78px;
+}
+.hp_client_sec{
+    padding-bottom: 0;
+}
+.service_hire{
+    padding-top: 150px;
+}
+.design_process{
+    float: left;
+    width: 100%;
+    padding: 150px 0;
+    position: relative;
+}
+.design_process .all-bubble.yellow{
+    left: 90px;
+    bottom: -150px;
+}
+.design_process .all-bubble.dark-blue {
+    height: 16px;
+    width: 16px;
+    background: #0B8AC6;
+    right: auto;
+    bottom: -50px;
+    left: 150px;
+}
+.design_process .all-bubble.dark-blue.right {
+    height: 16px;
+    width: 16px;
+    background: #50BCEC;
+    right: 80px;
+    bottom: -170px;
+    left: auto;
+}
+.design_process .all-bubble.blue {
+    left: auto;
+    top: auto;
+    bottom: -100px;
+    right: 110px;
+}
+.design_process .lighted_head{
+    background: #8DB84A;
+}
+.design_process_boxmn{
+    margin: 0 -17px;
+    text-align: center;
+}
+.design_process_box{
+    float: left;
+    width: 50%;
+    padding: 0 17px;
+    margin: 35px 0 0 0;
+}
+.design_process_box_bdr{
+    float: left;
+    width: 100%;
+    border: 1px solid #DBA800;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.design_process_box_title{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.process_box_count{
+    font-size: 22px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 900;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DBA800;
+    border-radius: 39px;
+}
+.process_box_title{
+    padding: 0 0 0 15px;
+    font-size:18px;
+    line-height:18px;
+    font-weight:600;
+}
+.design_process_box_bdr p{
+    padding: 0 10px;
+    margin: 20px 0 0 0;
+    min-height: 115px;
+}
+.design_process_box_bdr.box_bdr_darkcyan{
+    border: 1px solid #21A5AA;
+}
+.box_bdr_darkcyan .process_box_count{
+    background: #21A5AA;
+}
+.design_process_box_bdr.box_bdr_darkblue{
+    border: 1px solid #0136F8;
+}
+.box_bdr_darkblue .process_box_count{
+    background:#0136F8;
+}
+.design_process_box_bdr.box_bdr_pink{
+    border: 1px solid #FD5E85;
+}
+.box_bdr_pink .process_box_count{
+    background:#FD5E85;
+}
+.design_process_box_bdr.box_bdr_lightblue{
+    border: 1px solid #7956F9;
+}
+.box_bdr_lightblue .process_box_count{
+    background:#7956F9;
+}
+.design_process_box_last {
+    margin-left:auto;
+    margin-right: auto;
+    float: none;
+    display: inline-block;
+}
+.key_factors{
+    float: left;
+    width: 100%;
+    padding: 150px 0;
+    background: #F8F8F8
+}
+.key_factors .sec_heading{
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.key_factors .lighted_head{
+    background: #BE40EC;
+}
+.key_factors ul{
+    list-style: none;
+    padding: 0;
+    margin:0 -15px;
+}
+.key_factors li{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin: 89px 0 0 0;
+}
+.key_factors_text_icon{
+    float: left;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #35ADE3;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.key_factors_text{
+    display: block;
+    margin: 30px 0 0 0;
+    min-height: 55px;
+}
+.key_factors_text strong{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+.key_factors_icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0px 4px 14px #A3C6D5;
+    border-radius: 10px;
+    margin-top: -75px;
+    background: #fff;
+}
+.service_hire .btn{
+    padding: 13px 55px;
+}
+/*
+.service_why{
+    padding-top: 0;
+}
+*/
+.faq{
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 155px 0 0 0;
+}
+.faq .all-bubble.blue {
+    left: 60px;
+    top: auto;
+    bottom: -230px;
+}
+.faq .all-bubble.dark-blue {
+    right: auto;
+    bottom: -298px;
+    left: 150px;
+}
+.faq .ftheading{
+    text-align: right;
+    margin: 0 0 40px 0;
+}
+.faq .lighted_head{
+    background: #4CB938;
+}
+.faq ul{
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+}
+.faq li{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+.faq li .faq_title{
+    letter-spacing: 0.2px;
+    color: #070938;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 600;
+    margin: 0;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    padding:20px 19px 18px;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+}
+.faq li .faq_title.active,
+.faq li .faq_title:hover{
+    background: #F2F3F4;
+    border: 1px solid #F2F3F4;
+}
+.faq li .faq_title img {
+    margin: 7px 20px 0 0;
+    float: left;
+    width: 17px;
+}
+.faq li .faq_title strong{
+    float: left;
+    width: calc(100% - 37px);
+    font-weight: 600;
+}
+.faq li .faq_title.active img{
+    transform: rotate(45deg);
+    margin: 7px 20px 0 0;
+}
+.faq .faq_content{
+    display: none;
+    background: #F2F3F4;
+    padding: 4px 23px 10px 56px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
+}
+.faq .faq_content.active{
+    display: block;
+}
+.faq_content p{
+    margin-top: 0;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.faq_lt{
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+}
+.faq_rt{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+}
+.faq_lt li:last-child,
+.faq_rt li:last-child{
+    margin-bottom: 0;
+}
+.service_why .sec_heading{
+    text-align: left;
+    padding-left:17px;
+}
+.service_hire .container{
+    display: block;
+}
+.faq .container{
+    max-width: 1204px;
+}
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
+    .key_factors_text strong {
+        font-size: 15px;
+        line-height: 24px;
+    }    
+    .key_factors_text{
+        min-height: 50px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .design_process{
+        padding: 80px 0;
+    }
+    .design_process_box_bdr p{
+        min-height: 170px;
+    }
+    .key_factors {
+        padding: 80px 0;
+    }
+    .key_factors_text {
+        min-height: 85px;
+        overflow: hidden;
+    }
+    .service_hire {
+        padding: 80px 0;
+    }
+    .faq{
+        padding: 80px 0;
+    }
+    div.hp_blog_sec {
+        padding: 0 0 70px 0;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    .ser_right{
+        padding: 104px 0px 0px 78px;
+    }
+    .design_process_box_bdr p {
+        min-height: 255px;
+    }
+    .key_factors li{
+        width: 33.33%;
+    }
+    .ser_why_content ul li{
+        width: 50%;
+    }
+	.faq li .faq_title{
+		font-size: 18px;
+    	line-height: 24px;
+	}
+}

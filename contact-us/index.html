@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+     <title>Contact Us | eCommerce Solutions Provider - WebDesk Solution</title>
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     
+    <!--  <meta name="description" content="A one-stop solution for your eCommerce development needs. We offer eCommerce development services on major eCommerce platforms like Shopify, Magento, and more." /> -->
+     <link rel="" href="https://fonts.googleapis.com">
+     <link rel="" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="" as="font" href="https://fonts.googleapis.com">
+     <link rel="" as="font" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     
+     <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+     </style>
+     <link rel="stylesheet" href="../wp-content/themes/twentytwentytwo-child/css/comman.css" />
+     <link rel="stylesheet" href="../wp-content/themes/twentytwentytwo-child/css/contact-us.css" />
+     <link rel="stylesheet" href="../wp-content/themes/twentytwentytwo-child/css/service.css" />
+     <link rel="stylesheet" href="../wp-content/themes/twentytwentytwo-child/css/footer-form.css" />
+     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.12 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Connect with us for all your requirements for eCommerce web design &amp; development and mobile app design &amp; development in any sector." />
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Contact Us | eCommerce Solutions Provider | WebDesk Solution" />
+	<meta property="og:description" content="Connect with us for all your requirements for eCommerce web design &amp; development and mobile app design &amp; development in any sector." />
+	<meta property="og:url" content="https://webdesksolution.com/contact-us/" />
+	<meta property="og:site_name" content="WebDesk Solution" />
+	<meta property="article:modified_time" content="2023-05-25T10:29:10+00:00" />
+	<meta property="og:image" content="https://webdesksolution.com/wp-content/uploads/2023/02/trusted_logo_1.webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Contact Us | eCommerce Solutions Provider | WebDesk Solution" />
+	<meta name="twitter:description" content="Connect with us for all your requirements for eCommerce web design &amp; development and mobile app design &amp; development in any sector." />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="6 minutes" />
+	
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='https://stats.wp.com' />
+<link rel='dns-prefetch' href='https://c0.wp.com' />
+<link rel='dns-prefetch' href='https://i0.wp.com' />
+<link rel='stylesheet' id='contact-form-7-css' href='../wp-content/plugins/contact-form-7/includes/css/styles-ver=5.7.7.css' media='all' />
+<link rel='stylesheet' id='c4wp-public-css' href='../wp-content/plugins/wp-captcha/assets/css/c4wp-public-ver=6.2.2.css' media='all' />
+<link rel='stylesheet' id='wpcf7-redirect-script-frontend-css' href='../wp-content/plugins/wpcf7-redirect/build/css/wpcf7-redirect-frontend.min-ver=1.1.css' media='all' />
+<style id='wp-webfonts-inline-css'>@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('../wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('../wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
+<link rel='stylesheet' id='child-style-css' href='../wp-content/themes/twentytwentytwo-child/style-ver=1.0.css' media='all' />
+<link rel='stylesheet' id='twentytwentytwo-style-css' href='../wp-content/themes/twentytwentytwo/style-ver=1.0.0.css' media='all' />
+<link rel='stylesheet' id='newsletter-css' href='../wp-content/plugins/newsletter/style-ver=7.8.8.css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='../wp-content/plugins/jetpack/css/jetpack-ver=12.4-a.7.css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/plugins/wp-captcha//assets/js/c4wp-public.js?ver=6.2.2' id='c4wp-public-js'></script>
+	<style>img#wpstats{display:none}</style>
+				<link rel="preload" href="../wp-content/themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Roman.ttf.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="icon" href="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/02/cropped-favicon-circle-32x321-1.png?fit=32,32&ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/02/cropped-favicon-circle-32x321-1.png?fit=192,192&ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/02/cropped-favicon-circle-32x321-1.png?fit=180,180&ssl=1" />
+<meta name="msapplication-TileImage" content="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/02/cropped-favicon-circle-32x321-1.png?fit=270%2C270&#038;ssl=1" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>     <script type="rocketlazyloadscript" data-rocket-src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Google Tag Manager -->
+     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+     })(window,document,'script','dataLayer','GTM-PN9H6DC');</script>
+     <!-- End Google Tag Manager -->
+</head>
+<body>
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN9H6DC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header class="header hp_header hcontact">
+        <div class="site_header">
+            <div class="container">
+                <div class="logo_menu">
+                    <div class="logo">
+                        <a href="../index.html" title="store" class="custom-logo-link" rel="home"
+                            aria-current="page">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="184.363" height="40" viewBox="0 0 580.032 119.998">
+  <g id="Group_32259" data-name="Group 32259" transform="translate(-1634 -1007)">
+    <g id="register-icon" transform="translate(2192.033 1021)">
+      <path id="Path_34237" data-name="Path 34237" d="M19.642,11v0h0A8.658,8.658,0,0,0,11,2.352v0H11v0A8.658,8.658,0,0,0,2.352,11h0V11h0a8.643,8.643,0,0,0,8.641,8.645v0H11v0A8.647,8.647,0,0,0,19.642,11Zm-12.5,4.425V6.3h4.7a6.779,6.779,0,0,1,2,.226,2.114,2.114,0,0,1,1.115.831,2.512,2.512,0,0,1,.422,1.477,2.439,2.439,0,0,1-1.214,2.206,3.369,3.369,0,0,1-.99.358,2.842,2.842,0,0,1,.736.338,3.047,3.047,0,0,1,.451.478,3.621,3.621,0,0,1,.4.567l1.364,2.646H12.936l-1.507-2.791a2.17,2.17,0,0,0-.512-.7,1.19,1.19,0,0,0-.691-.211H9.977v3.7H7.145Zm2.834-5.43h1.19a4.317,4.317,0,0,0,.747-.124.756.756,0,0,0,.458-.286.85.85,0,0,0,.177-.528.834.834,0,0,0-.281-.678,1.685,1.685,0,0,0-1.053-.238H9.979V9.995Zm12.014,1H22v0a10.948,10.948,0,0,1-2.313,6.746,11.172,11.172,0,0,1-.909,1.031A10.967,10.967,0,0,1,11,21.995V22h-.007v-.005A10.988,10.988,0,0,1,.005,11H0V11H.005A10.984,10.984,0,0,1,11,.005V0H11V.005A10.984,10.984,0,0,1,21.993,11Z" fill="#52514e"/>
+    </g>
+    <g id="wds-logo" transform="translate(1630.017 1006.997)">
+      <g id="Group_32257" data-name="Group 32257">
+        <path id="Path_34238" data-name="Path 34238" d="M287.707,52.9a3.538,3.538,0,0,1-3.645,2.724h-10a3.516,3.516,0,0,1-3.7-2.724l-6.528-25.762c-.411-1.777-.7-3.611-.94-5.328h-1.53c-.294,1.776-.529,3.611-.94,5.389l-6.468,25.7a3.627,3.627,0,0,1-3.763,2.724H240.2a3.494,3.494,0,0,1-3.646-2.724l-9.114-38.137h10.349l6.174,27.6c.352,1.834.528,3.849.763,6.158h1.647c.353-2.015.647-4.264,1.176-6.219l6.409-24.517a3.541,3.541,0,0,1,3.645-3.019h9.056a3.523,3.523,0,0,1,3.586,3.019l6.526,24.637c.471,1.954.766,4.145,1.118,6.1h1.647c.175-2.015.411-4.206.764-6.04l6.231-27.715H296.88Z" fill="#50bceb"/>
+        <path id="Path_34239" data-name="Path 34239" d="M336.675,55.154c-7.173.651-15.994.651-23.989.651-6.7,0-11-3.315-11.057-8.466V23.057c.06-5.152,4.412-8.468,11.057-8.468,7.995,0,16.816,0,23.989.651l-.471,7.225H315.742c-2.706,0-3.941.889-3.941,2.784v5.685h21.522v7.047H311.8v7.166c0,1.954,1.235,2.842,3.941,2.842H336.2Z" fill="#50bceb"/>
+        <path id="Path_34240" data-name="Path 34240" d="M371.536,34.6c8,.533,10.76,4.323,10.76,10.837,0,8.41-5.116,10.661-17.521,10.661-9.762,0-14.875-.06-21.346-.475V14.767c5.764-.415,10.409-.474,18.933-.474,13.467,0,18.289,2.249,18.289,10.658,0,5.864-2.646,8.824-9.114,9.3V34.6Zm-9.643-13.087h-8.587v9.771h9.352c6.231,0,8.29-.947,8.29-4.973C370.948,22.407,368.772,21.518,361.893,21.518Zm1.176,27.359c7,0,9.054-1.006,9.054-5.389,0-4.678-2.176-5.805-9.348-5.863h-9.469V48.877Z" fill="#50bceb"/>
+        <path id="Path_34241" data-name="Path 34241" d="M430.622,35.2c0,16.284-5.763,21.023-21.873,21.023-7.7,0-14.113-.237-19.934-.592V14.767c5.88-.3,12.114-.594,19.934-.594C424.859,14.173,430.622,18.912,430.622,35.2Zm-10.642,0c0-10.423-2.707-13.383-11.231-13.383H398.87V48.462c2.94.059,6.231.119,9.879.119C417.273,48.582,419.98,45.621,419.98,35.2Z" fill="#50bceb"/>
+        <path id="Path_34242" data-name="Path 34242" d="M472.067,55.154c-7.175.651-15.992.651-23.989.651-6.7,0-11-3.315-11.056-8.466V23.057c.06-5.152,4.408-8.468,11.056-8.468,8,0,16.814,0,23.989.651l-.471,7.225H451.132c-2.7,0-3.938.889-3.938,2.784v5.685h21.522v7.047H447.194v7.166c0,1.954,1.234,2.842,3.938,2.842H471.6Z" fill="#50bceb"/>
+        <path id="Path_34243" data-name="Path 34243" d="M512.218,15.713l-.588,6.634c-4.469-.12-10.7-.178-16.053-.178-6.231,0-8.584.238-8.584,3.2,0,2.489,1.706,3.2,5.881,4.2L503.1,32.354c8.35,2.429,11,6.1,11,12.081,0,9.3-5.233,11.962-18.933,11.962a89.744,89.744,0,0,1-17.641-1.658l.646-7.048c9.231.18,13.35.239,17.051.239,6.7,0,8.7-.533,8.7-3.315,0-2.548-1.645-3.2-5.525-4.029l-10.7-3.079c-7.937-2.429-10.819-5.982-10.819-12.022,0-9.357,5.528-11.489,18.582-11.489A69.514,69.514,0,0,1,512.218,15.713Z" fill="#50bceb"/>
+        <path id="Path_34244" data-name="Path 34244" d="M529.851,37.8a19.116,19.116,0,0,1,.471,3.909V55.628H520.266V14.767h10.056v11.25a22.783,22.783,0,0,1-.471,4.917h4.822l13.64-16.167h11.7L546.551,30.992a13.488,13.488,0,0,1-3.528,3.376v.177a14.724,14.724,0,0,1,3.939,3.731l14.054,17.352H548.961L534.731,37.8Z" fill="#50bceb"/>
+      </g>
+      <g id="Group_32258" data-name="Group 32258">
+        <path id="Path_34245" data-name="Path 34245" d="M265.38,70.273l-.589,6.634c-4.48-.12-10.729-.18-16.093-.18-6.249,0-8.606.238-8.606,3.2,0,2.487,1.709,3.2,5.894,4.207l10.258,2.782c8.37,2.426,11.022,6.1,11.022,12.078,0,9.3-5.246,11.965-18.98,11.965A90.352,90.352,0,0,1,230.6,109.3l.649-7.048c9.254.18,13.38.236,17.094.236,6.721,0,8.724-.532,8.724-3.315,0-2.546-1.649-3.2-5.54-4.027L240.8,92.066c-7.958-2.429-10.847-5.981-10.847-12.022,0-9.355,5.542-11.488,18.628-11.488A69.759,69.759,0,0,1,265.38,70.273Z" fill="#52514e"/>
+        <path id="Path_34246" data-name="Path 34246" d="M315.655,89.757c0,16.463-5.833,21.261-22.1,21.261S271.5,106.22,271.5,89.757,277.281,68.5,293.551,68.5,315.655,73.293,315.655,89.757Zm-33.481,0c0,10.481,2.652,13.385,11.377,13.385,8.665,0,11.378-2.9,11.378-13.385s-2.713-13.384-11.378-13.384C284.826,76.374,282.174,79.274,282.174,89.757Z" fill="#52514e"/>
+        <path id="Path_34247" data-name="Path 34247" d="M331.917,99.35c0,1.955,1.355,2.843,4.42,2.843h18.509l.473,7.463c-7.014.709-14.619.709-22.046.709-7.959,0-11.436-3.672-11.436-8.823V69.325h10.08Z" fill="#52514e"/>
+        <path id="Path_34248" data-name="Path 34248" d="M400.116,93.785c0,12.553-5.365,17.233-20.046,17.233-15.5,0-21.043-4.681-21.043-17.233V69.325h10.08v24.46c0,7.283,2.654,9.357,10.493,9.357,7.661,0,10.316-2.074,10.316-9.357V69.325h10.2v24.46Z" fill="#52514e"/>
+        <path id="Path_34249" data-name="Path 34249" d="M430.285,77.2v32.986H420.148V77.2H403.995V69.325h42.444V77.2Z" fill="#52514e"/>
+        <path id="Path_34250" data-name="Path 34250" d="M450.735,110.188V69.325h10.08v40.863h-10.08Z" fill="#52514e"/>
+        <path id="Path_34251" data-name="Path 34251" d="M511.389,89.757c0,16.463-5.835,21.261-22.107,21.261s-22.045-4.8-22.045-21.261S473.013,68.5,489.282,68.5,511.389,73.293,511.389,89.757Zm-33.482,0c0,10.481,2.652,13.385,11.375,13.385,8.668,0,11.38-2.9,11.38-13.385s-2.712-13.384-11.38-13.384C480.559,76.374,477.907,79.274,477.907,89.757Z" fill="#52514e"/>
+        <path id="Path_34252" data-name="Path 34252" d="M561.016,106.633q0,3.554-3.713,3.555h-7.075c-2.121,0-2.948-1.065-4.125-2.9L531.129,85.849a26.482,26.482,0,0,1-3.242-6.159H527a46.56,46.56,0,0,1,.474,6.4v24.1h-9.727V72.88c0-2.368,1.3-3.554,3.713-3.554h6.957c2.182,0,3.009,1.126,4.186,2.9l14.443,20.728a54.065,54.065,0,0,1,3.713,6.395h1.06a51.373,51.373,0,0,1-.471-6.691V69.325h9.668Z" fill="#52514e"/>
+      </g>
+      <path id="Path_34253" data-name="Path 34253" d="M137.134,100.207h0a15.249,15.249,0,0,0,11.771-5.54A15.254,15.254,0,0,1,137.134,100.207Z" fill="#13333d"/>
+      <path id="Path_34254" data-name="Path 34254" d="M131.217,99.009a15.118,15.118,0,0,0,5.455,1.165A15.1,15.1,0,0,1,131.217,99.009Z" fill="#13333d"/>
+      <path id="Path_34255" data-name="Path 34255" d="M127.465,73.152a14.342,14.342,0,0,1,1.486-5.127A14.342,14.342,0,0,0,127.465,73.152Z" fill="#13333d"/>
+      <path id="Path_34256" data-name="Path 34256" d="M137.134,100.207h0c-.156,0-.306-.027-.462-.032a14.961,14.961,0,0,1-7.213-2.044v0a15.306,15.306,0,0,1-3.653-2.964c-2.826-2.644-7.118-8.8-12.449-16.392C100.6,60.6,81.919,34.289,63.356,28.708c-29.7-8.938-50.448,43.506-19.777,44.479C58.348,73.66,79.921,90,99.707,103.247c4.179,2.794,8.274,5.448,12.209,7.793,20.94,12.454,37.326,15.944,36.988-16.373A15.251,15.251,0,0,1,137.134,100.207Z" fill="#50bceb"/>
+      <path id="Path_34257" data-name="Path 34257" d="M194.374,73.5c.388-7.464.079-16.214.01-24.334-.071-7.6.076-14.661,1.2-19.58,2.806-12.3,8.762-24,19.523-28.907-24.851,10.612-29.856,29.338-30.746,45.408-.416,7.594.081,14.584-.158,19.853,0,.069,0,.132,0,.2a15.472,15.472,0,0,1-.238,2.685c-.317,2.456-.946,4.346-2.138,5.491a16.181,16.181,0,0,1-1.16,1.594,15.291,15.291,0,0,0,13.7-2.409Z" fill="#1476ba"/>
+      <path id="Path_34258" data-name="Path 34258" d="M215.107.675c.355-.144.7-.3,1.066-.45" fill="#13333d"/>
+      <path id="Path_34259" data-name="Path 34259" d="M194.374,73.5a15.289,15.289,0,0,1-13.7,2.409,14.83,14.83,0,0,1-1.462-.535,9.229,9.229,0,0,1-2.637-1.44,14.667,14.667,0,0,1-1.73-1.386c-.062-.048-.123-.1-.185-.151-4.263-3.707-10.048-10.3-16.2-17.319q-1.728-1.98-3.48-3.979c-10.691-12.166-21.826-24.318-27.64-24.3-7.791.017-3.112,26.112.091,46.38a.214.214,0,0,1,.038-.023,14.411,14.411,0,0,1,17.872-12.6c.433.108.858.231,1.274.377a14.324,14.324,0,0,1,1.9.831,21.182,21.182,0,0,1,5.191,3.866c3.215,2.927,7.623,7.406,13.55,13.4q1.03,1.038,2.109,2.134c.076.078.149.15.223.225C188.959,100.819,193.49,90.54,194.374,73.5Z" fill="#50bceb"/>
+      <path id="Path_34260" data-name="Path 34260" d="M128.951,68.025a14.342,14.342,0,0,0-1.486,5.127,1.516,1.516,0,0,0-.015.169c.368,2.325.712,4.565,1.019,6.685a83.814,83.814,0,0,1,1.188,13.01,16.909,16.909,0,0,1,.12,1.931,16.207,16.207,0,0,1-.315,3.183v0a14.961,14.961,0,0,0,7.213,2.044c.157,0,.307.032.462.032h0a15.249,15.249,0,0,0,11.771-5.54c-.028-2.279-.133-4.732-.329-7.376-.3-4.184-.83-8.828-1.594-13.993-.005-.032-.008-.059-.012-.094-.367-2.488-.631-4.556-.765-6.242a14.959,14.959,0,0,1-.134-2,15.409,15.409,0,0,1,.54-4.035c-.415-.146-.842-.269-1.273-.377a14.413,14.413,0,0,0-16.389,7.473Z" fill="#1476ba"/>
+      <path id="Path_34261" data-name="Path 34261" d="M225.762,3.882c-53.551,21.207.526,89.56-45.09,102.556C235.733,97.173,183.693,27.939,225.762,3.882Z" fill="#50bceb"/>
+      <path id="Path_34262" data-name="Path 34262" d="M24.778,31.75a42.312,42.312,0,0,1,32.8-18.567A43.271,43.271,0,0,1,89.4,24.4a48.1,48.1,0,0,1,8.852,10.959,43.429,43.429,0,0,1,4.294,10.18,49.612,49.612,0,0,1,1.424,7.065l.313,2.561s.02-.9.054-2.581a37.969,37.969,0,0,0-.5-7.33A45.326,45.326,0,0,0,100.5,34.215,45.339,45.339,0,0,0,77.343,11.166a46.539,46.539,0,0,0-20-3.948A47.467,47.467,0,0,0,36.1,12.734a50.169,50.169,0,0,0-16.919,15.2A49.037,49.037,0,0,0,11.3,49.412c-.268,1.937-.221,3.565-.325,5.347.075,2.162.188,3.811.375,5.709a49.1,49.1,0,0,0,2.612,10.585,46.555,46.555,0,0,0,11.07,17.114,45.025,45.025,0,0,0,15.145,9.912,45.589,45.589,0,0,0,14.841,3.169,50.14,50.14,0,0,0,6.211-.2,35.951,35.951,0,0,0,5.221-.795,26.975,26.975,0,0,0,4.1-1.109,21.057,21.057,0,0,0,2.913-1.08c1.547-.66,2.375-1.009,2.375-1.009s-.868.229-2.493.661a44.631,44.631,0,0,1-7.1,1.24,33.983,33.983,0,0,1-5.1.23,47.34,47.34,0,0,1-6-.442,49.093,49.093,0,0,1-13.394-4.2A43.638,43.638,0,0,1,19.579,69.084a43.254,43.254,0,0,1-1.973-9.3c-.11-1.54-.138-3.371-.173-4.7.147-1.694.117-3.6.385-5.149A42.665,42.665,0,0,1,24.778,31.75Z" fill="#50bceb"/>
+      <path id="Path_34263" data-name="Path 34263" d="M81.742,104.156c-1.485.53-3.193,1.143-5.1,1.828a34.97,34.97,0,0,1-6.5,1.626,34.056,34.056,0,0,1-3.742.659l-4.084.22a47.688,47.688,0,0,1-8.957-.275q-2.313-.382-4.744-.789l-4.889-1.294A52.06,52.06,0,0,1,24.556,95.257,55.053,55.053,0,0,1,10.37,75.331a54.527,54.527,0,0,1-3.6-25.873A53.075,53.075,0,0,1,16.445,24.5a55.437,55.437,0,0,1,9.2-9.987,54.289,54.289,0,0,1,11.4-7.189,52.065,52.065,0,0,1,25.6-4.855A52.111,52.111,0,0,1,86.05,9.437a53.624,53.624,0,0,1,16.43,14.68,54.578,54.578,0,0,1,10.566,31.165c-.086,2.04-.163,3.858-.23,5.438a31.9,31.9,0,0,1-.53,3.971c-.351,2.155-.537,3.308-.537,3.308s.227-1.146.655-3.286a32.316,32.316,0,0,0,.673-3.977c.124-1.577.264-3.393.422-5.424a56.278,56.278,0,0,0-1.743-14.668,53.041,53.041,0,0,0-8.037-17.418A55.4,55.4,0,0,0,87.053,7.734,57.962,57.962,0,0,0,75.666,2.495,56.008,56.008,0,0,0,62.761.118,54.528,54.528,0,0,0,35.984,5.03a56.739,56.739,0,0,0-12.011,7.463,57.6,57.6,0,0,0-9.728,10.429,55.522,55.522,0,0,0-10,26.391A56.975,56.975,0,0,0,8.2,76.229,54.973,54.973,0,0,0,23.267,96.745a53.748,53.748,0,0,0,20.016,10.841c1.72.422,3.4.83,5.051,1.235,1.688.23,3.336.462,4.943.686a48.377,48.377,0,0,0,9.091-.041c1.427-.131,2.8-.253,4.137-.375a34.345,34.345,0,0,0,3.775-.8,35.181,35.181,0,0,0,6.51-1.879c1.9-.756,3.6-1.437,5.075-2.024,1.375-.782,2.548-1.446,3.5-1.985,1.9-1.079,2.913-1.652,2.913-1.652L85.307,102.3C84.338,102.8,83.146,103.424,81.742,104.156Z" fill="#1476ba"/>
+    </g>
+  </g>
+</svg>  -->
+          <img src="/assets/logo/e-com-logo.svg" alt="">                                                      
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a onclick="history.back()" href="index.html#" class="go_back"><svg xmlns="http://www.w3.org/2000/svg" width="16.698" height="14.769"
+                            viewBox="0 0 16.698 14.769">
+                            <path id="arrow"
+                                d="M19.668,17.989a1.024,1.024,0,0,1,1.413,1.484L17.092,24H29.674a1.024,1.024,0,0,1,0,2.049H17.125l3.955,4.657a1.024,1.024,0,1,1-1.413,1.483L14.6,26.477a2.048,2.048,0,0,1,.018-2.915Z"
+                                transform="translate(-14 -17.706)" />
+                        </svg> Go Back</a>
+                </div>
+            </div>
+        </div>
+    </header><div class="logo_form">
+        <div class="container">
+            <div class="all-bubble yellow left"></div>
+            <div class="all-bubble red"></div>
+            <div class="all-bubble blue"></div>
+            <div class="all-bubble green"></div>
+            <div class="all-bubble yellow right"></div>
+            <div class="all-bubble green border"></div>
+            <div class="all-bubble green border2"></div>
+            <div class="all-bubble green left"></div>
+
+            <div class="logo_form_lt">
+                <p class="trust_head">Trusted By</p>
+                <div class="trusted_logo">
+                    <ul>
+                        <li><img decoding="async" src="/assets/CLIENTELES/clienteles_logo_1.jpg" alt="Intelcom" title="Intelcom"  width="172" height="90"  data-recalc-dims="1"></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/clienteles_logo_10.jpg" alt="Telus"  title="Telus" width="172" height="90"  data-recalc-dims="1" ></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/clienteles_logo_4.jpg" alt="a Fan for life" title="a fan for life"  width="172" height="90"  data-recalc-dims="1"></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/clienteles_logo_5.jpg" alt="packnwood" title="packnwood" width="172"  height="90"  data-recalc-dims="1" ></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/clienteles_logo_7.jpg" alt="our green house" title="our green house"  width="172" height="90"  data-recalc-dims="1" ></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/clienteles_logo_8.jpg" alt="essentia "  title="essentia" width="172" height="90"  data-recalc-dims="1" ></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/ecom1.png" alt="Camera Source" title="Camera Source"  width="172" height="90"  data-recalc-dims="1" ></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/ecom3.png" alt="Outdoorlimited" title="Outdoorlimited"  width="172" height="90"  data-recalc-dims="1"></li>
+                        <li><img decoding="async" src="/assets/CLIENTELES/ecom5.png" alt="Be-Tailor" title="Be-Tailor"  width="172" height="90"  data-recalc-dims="1" ></li>
+                    </ul>
+                </div>
+                <div class="Discover">
+                    <h2>Discover what our clients have to say.</h2>
+                </div>
+                <div class="testi_sec">
+                    <div class="bds_slide_outer">
+                        <div class="bds_slide">
+
+                            <div class="bds_sinner">
+                                <div class="bds_sinner_inner">
+                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%2090'%3E%3C/svg%3E" alt="quote mark" title="quote mark"
+                                        width="172" height="90" data-lazy-src="../wp-content/uploads/2023/02/testimonial-ic.svg"><noscript><img decoding="async" src="../wp-content/uploads/2023/02/testimonial-ic.svg" alt="quote mark" title="quote mark"
+                                        width="172" height="90"></noscript>
+                                    <p>I've been a CommerceNinja customer for several years now, and I can honestly say that it has transformed my business. The platform's analytics and reporting tools have helped me make data-driven decisions that have resulted in increased sales and improved customer satisfaction. I couldn't be happier with my experience.</p>
+                                    <div class="client_detail">
+                                        <div class="client_pic">
+                                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2070%2070'%3E%3C/svg%3E" alt="Greg Coutu"
+                                                title="Greg Coutu" width="70 px" height="70"  data-recalc-dims="1" data-lazy-src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/02/greg_coutu.webp?ssl=1"><noscript><img decoding="async" src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/02/greg_coutu.webp?ssl=1" alt="Greg Coutu"
+                                                title="Greg Coutu" width="70 px" height="70"  data-recalc-dims="1"></noscript>
+                                        </div>
+                                        <div class="client_name">
+                                            <div class="testimonial-name">Jane Makes</div>
+                                            <p>Founder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bds_sinner">
+                                <div class="bds_sinner_inner">
+                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%2090'%3E%3C/svg%3E" alt="quote mark" title="quote mark"
+                                        width="172" height="90" data-lazy-src="../wp-content/uploads/2023/02/testimonial-ic.svg"><noscript><img decoding="async" src="../wp-content/uploads/2023/02/testimonial-ic.svg" alt="quote mark" title="quote mark"
+                                        width="172" height="90"></noscript>
+                                    <p>I've been using CommerceNinja for my online store for over a year now, and I have to say I'm impressed. The platform is easy to use, and the customer support is top-notch. My sales have increased, and my customers keep coming back for more. Highly recommended!</p>
+                                    <div class="client_detail">
+                                        <div class="client_pic">
+                                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2070%2070'%3E%3C/svg%3E" alt="PacknWood"
+                                                title="PacknWood" width="70 px" height="70" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/group-32326.png?ssl=1" /><noscript><img decoding="async" src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/group-32326.png?ssl=1" alt="PacknWood"
+                                                title="PacknWood" width="70 px" height="70" data-recalc-dims="1" /></noscript>
+                                        </div>
+                                        <div class="client_name">
+                                            <div class="testimonial-name">Emily Willey </div>
+                                            <p>CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bds_sinner">
+                                <div class="bds_sinner_inner">
+                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%2090'%3E%3C/svg%3E" alt="quote mark" title="quote mark"
+                                        width="172" height="90" data-lazy-src="../wp-content/uploads/2023/02/testimonial-ic.svg"><noscript><img decoding="async" src="../wp-content/uploads/2023/02/testimonial-ic.svg" alt="quote mark" title="quote mark"
+                                        width="172" height="90"></noscript>
+                                    <p>The Admission Department of National Institute of Fashion Technology (NIFT) Head office appreciates the effective and timely contribution by the company to the entire process making it a resounding success.</p>
+                                    <div class="client_detail">
+                                        <div class="client_pic">
+                                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2070%2070'%3E%3C/svg%3E" alt="Fine Art Canvas"
+                                                title="Fine Art Canvas" width="70 px" height="70" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/fine_art_canvas_logo.png?ssl=1" /><noscript><img decoding="async" src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/fine_art_canvas_logo.png?ssl=1" alt="Fine Art Canvas"
+                                                title="Fine Art Canvas" width="70 px" height="70" data-recalc-dims="1" /></noscript>
+                                        </div>
+                                        <div class="client_name">
+                                            <div class="testimonial-name">Pramila Sharan</div>
+                                            <p>Additional Director General, NIFT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bds_sinner">
+                                <div class="bds_sinner_inner">
+                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%2090'%3E%3C/svg%3E" alt="quote mark" title="quote mark"
+                                        width="172" height="90" data-lazy-src="../wp-content/uploads/2023/02/testimonial-ic.svg"><noscript><img decoding="async" src="../wp-content/uploads/2023/02/testimonial-ic.svg" alt="quote mark" title="quote mark"
+                                        width="172" height="90"></noscript>
+                                    <p>The quality standards, dedication and sincerity demonstrated by the team at Infilon were of high standards and we appreciate the same.</p>
+                                    <div class="client_detail">
+                                        <div class="client_pic">
+                                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2070%2070'%3E%3C/svg%3E" alt="BioandChic"
+                                                title="BioandChic" width="70 px" height="70" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/bioandchic_logo.png?ssl=1" /><noscript><img decoding="async" src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/bioandchic_logo.png?ssl=1" alt="BioandChic"
+                                                title="BioandChic" width="70 px" height="70" data-recalc-dims="1" /></noscript>
+                                        </div>
+                                        <div class="client_name">
+                                            <div class="testimonial-name">Errol D'souza</div>
+                                            <p>IIM-A director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bds_sinner">
+                                <div class="bds_sinner_inner">
+                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%2090'%3E%3C/svg%3E" alt="quote mark" title="quote mark"
+                                        width="172" height="90" data-lazy-src="../wp-content/uploads/2023/02/testimonial-ic.svg"><noscript><img decoding="async" src="../wp-content/uploads/2023/02/testimonial-ic.svg" alt="quote mark" title="quote mark"
+                                        width="172" height="90"></noscript>
+                                    <p>Excellent company to work with, had all the time in the world to help me and produce exactly what I was looking for! I would definitely recommend to others!</p>
+                                    <div class="client_detail">
+                                        <div class="client_pic">
+                                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2070%2070'%3E%3C/svg%3E" alt="CC Wholesale Clothing"
+                                                title="CC Wholesale Clothing" width="70 px" height="70" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/cc_wholesale_clothing.png?ssl=1" /><noscript><img decoding="async" src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/cc_wholesale_clothing.png?ssl=1" alt="CC Wholesale Clothing"
+                                                title="CC Wholesale Clothing" width="70 px" height="70" data-recalc-dims="1" /></noscript>
+                                        </div>
+                                        <div class="client_name">
+                                            <div class="testimonial-name">Todd Dawson</div>
+                                            <p>UFM ATM's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bds_sinner">
+                                <div class="bds_sinner_inner">
+                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%2090'%3E%3C/svg%3E" alt="quote mark" title="quote mark"
+                                        width="172" height="90" data-lazy-src="../wp-content/uploads/2023/02/testimonial-ic.svg"><noscript><img decoding="async" src="../wp-content/uploads/2023/02/testimonial-ic.svg" alt="quote mark" title="quote mark"
+                                        width="172" height="90"></noscript>
+                                    <p>The team at Infilon were quick to engage and get on with the work. They were always ready to provide their services and responded in a timely manner.</p>
+                                    <div class="client_detail">
+                                        <div class="client_pic">
+                                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2070%2070'%3E%3C/svg%3E" alt="Hobby Villa"
+                                                title="Hobby Villa" width="70 px" height="70" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/hobbyvilla_logo.png?ssl=1" /><noscript><img decoding="async" src="https://i0.wp.com/webdesksolution.com/wp-content/uploads/2023/04/hobbyvilla_logo.png?ssl=1" alt="Hobby Villa"
+                                                title="Hobby Villa" width="70 px" height="70" data-recalc-dims="1" /></noscript>
+                                        </div>
+                                        <div class="client_name">
+                                            <div class="testimonial-name">Matthew McCluskey</div>
+                                            <p>UpWork Client</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo_form_rt">
+                <div class="logo_form_rt_box">
+<h1>Contact Us</h1>
+<p>All projects secured by NDA &#038; IP is your&#8217;s</p>
+ <div class="form-section">         
+<div class="wpcf7 no-js" id="wpcf7-f459-p1442-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/contact-us/#wpcf7-f459-p1442-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="459" />
+<input type="hidden" name="_wpcf7_version" value="5.7.7" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f459-p1442-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="1442" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<input class="wpcf7-form-control wpcf7-hidden" value="save_contact_us_form" type="hidden" name="action" />
+<input class="wpcf7-form-control wpcf7-hidden" value="footer" type="hidden" name="form_req" />
+<input class="wpcf7-form-control wpcf7-hidden" value="page_url" type="hidden" name="page_url" />
+<input class="wpcf7-form-control wpcf7-hidden" value="refurl" type="hidden" name="ref_url" />
+<div class="fl_name">
+	<div class="f_name">
+		<p><span class="wpcf7-form-control-wrap" data-name="wds_cf_firstname"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name*" value="" type="text" name="wds_cf_firstname" /></span>
+		</p>
+	</div>
+	<div class="l_name">
+		<p><span class="wpcf7-form-control-wrap" data-name="wds_cf_lastname"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name*" value="" type="text" name="wds_cf_lastname" /></span>
+		</p>
+	</div>
+</div>
+<div class="fl_name">
+	<div class="f_name">
+		<p><span class="wpcf7-form-control-wrap" data-name="wds_cf_email"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Work Email*" value="" type="email" name="wds_cf_email" /></span>
+		</p>
+	</div>
+	<div class="l_name">
+		<div class="phone_input">
+			<p><span class="wpcf7-form-control-wrap" data-name="wds_cf_phone-cf7it-national"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone*" value="" type="text" name="wds_cf_phone-cf7it-national" /></span>
+			</p>
+		</div>
+	</div>
+</div>
+<div class="other_input">
+	<p><span class="wpcf7-form-control-wrap" data-name="wds_cf_companyname"><input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Company Name" value="" type="text" name="wds_cf_companyname" /></span>
+	</p>
+</div>
+<div class="other_input">
+	<p><span class="wpcf7-form-control-wrap" data-name="wds_cf_yourmessage"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Brief about the project" name="wds_cf_yourmessage"></textarea></span>
+	</p>
+</div>
+<div class="submit_btn">
+	<p><input class="wpcf7-form-control has-spinner wpcf7-submit wds-form-control wds-submit" type="submit" value="Get Started" /><span>100% Secure. Zero Spam.</span>
+	</p>
+</div><p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="188"/><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+    <footer class="footer">
+     <div class="f_bottom_left">
+          <p>&copy; 2023, Ninja Tech, All Rights Reserved.</p>
+     </div>
+ </footer>
+<style>
+			.sd-social-icon .sd-content ul li a.sd-button>span {
+				margin-left: 0;
+			}
+		</style><script type="rocketlazyloadscript" defer id="bilmur" data-provider="wordpress.com" data-service="atomic"  data-rocket-src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202330"></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-image-cdn/dist/image-cdn.js?minify=false&#038;ver=132249e245926ae3e188' id='jetpack-photon-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7' id='swv-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/webdesksolution.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7' id='contact-form-7-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/jquery/ui/mouse.min.js' id='jquery-ui-mouse-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/jquery/ui/sortable.min.js' id='jquery-ui-sortable-js'></script>
+<script id='wpcf7-redirect-script-js-extra'>
+var wpcf7r = {"ajax_url":"https:\/\/webdesksolution.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/plugins/wpcf7-redirect/build/js/wpcf7r-fe.js?ver=1.1' id='wpcf7-redirect-script-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/themes/twentytwentytwo-child/js/wds_blog.js?v=1690373447&#038;ver=6.2.2' id='wds_blog-ajax-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://www.google.com/recaptcha/api.js?render=6LehgWMlAAAAAOrCA6Z_DFZvyZQD5AsZW6G7E8-i&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js' id='wp-polyfill-inert-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://c0.wp.com/c/6.2.2/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script id='wpcf7-recaptcha-js-extra'>
+var wpcf7_recaptcha = {"sitekey":"6LehgWMlAAAAAOrCA6Z_DFZvyZQD5AsZW6G7E8-i","actions":{"homepage":"homepage","contactform":"contactform"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7.7' id='wpcf7-recaptcha-js'></script>
+<script defer src='https://stats.wp.com/e-202330.js' id='jetpack-stats-js'></script>
+<script id='jetpack-stats-js-after'>
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'218108095',post:'1442',tz:'-4',srv:'webdesksolution.com',hp:'atomic',ac:'2',amp:'0',j:'1:12.4-a.7'} ]);
+_stq.push([ "clickTrackerInit", "218108095", "1442" ]);
+</script>
+<script type="rocketlazyloadscript" defer data-rocket-src='https://webdesksolution.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1666634240' id='akismet-frontend-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/themes/twentytwentytwo-child/js/slick.js?ver=1.0.0' id='slick-js-js'></script>
+<script type="rocketlazyloadscript" data-rocket-src='https://webdesksolution.com/wp-content/themes/twentytwentytwo-child/js/custom.js?ver=1.0.0' id='custom-js-js'></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script type="rocketlazyloadscript" data-rocket-src='//www.google.com/recaptcha/api.js'></script>
+<script type="rocketlazyloadscript">
+
+        jQuery(window).scroll(function () {
+            var e = jQuery(window).scrollTop() / -10 + "px";
+            jQuery(".all-bubble").css("transform", "translateY(" + e + ")");
+        });
+        jQuery('.bds_slide').slick({
+            dots: true,
+            infinite: false,
+            speed: 1000,
+            arrows: false,
+            variableWidth: false
+        });
+
+    </script>
+</body>
+</html><!-- Rocket no webp -->

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+	<title>faq-plus-ic</title>
+	<defs>
+		<image  width="12" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMAQMAAABsu86kAAAAAXNSR0IB2cksfwAAAAZQTFRF////ZmZmju5soAAAAAJ0Uk5TAP9bkSK1AAAAE0lEQVR4nGNgY2BARv8/gBCqIABKJQQbmvYVtgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

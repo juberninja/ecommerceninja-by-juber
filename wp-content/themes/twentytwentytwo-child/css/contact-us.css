@@ -1,0 +1,330 @@
+.header{
+    background: #f7f8fa;
+    padding:15px 0;
+    position: initial;
+    border-bottom: 1px #E2DFDF solid;
+}
+.right a{
+    font-size:18px;
+    list-style:18px;
+    letter-spacing: 0.54px;
+    color: #070938;
+}
+.right a:hover{
+    color: #35ade3;
+}
+.right a svg{
+    fill:#070938;
+}
+.right a:hover svg{
+    fill:#35ade3;
+}
+.logo_menu{
+    margin: 0;
+}
+.site_header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_form .all-bubble.big.sky-blue {
+    bottom: auto;
+    top: 430px;
+}
+.logo_form .all-bubble.red {
+    bottom: auto;
+    top: 350px;
+    left: 100px;
+}
+.logo_form .all-bubble.yellow{
+    top: 250px;
+    bottom: auto;
+}
+.logo_form .all-bubble.blue{
+    left: 60px;
+    top: 50px;
+}
+.logo_form .all-bubble.dark-blue{
+    bottom: 0;
+}
+.logo_form .all-bubble.green {
+    right: 11%;
+    top: 150px;
+}
+.logo_form .all-bubble.green.left {
+    right: auto;
+    bottom: 50px;
+    top: auto;
+    left: 80px;
+    width: 60px;
+    height: 60px;
+}
+.logo_form .all-bubble.yellow.right {
+    top: 50px;
+}
+.logo_form .all-bubble.green.border {
+    bottom: auto;
+    right: 10.98%;
+    top: 470px;
+}
+.logo_form .all-bubble.green.border2 {
+    bottom: auto;
+    right: 100px;
+    top: 670px;
+    border: 4px solid #4CAF50;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+}
+.logo_form .container{
+    max-width: 1200px !important;
+}
+.logo_form{
+    float: left;
+    width: 100%;
+    background: url("../../../uploads/2023/02/contact_bg.webp") no-repeat center top;
+    background-size: 100%;
+    padding: 40px 0;
+    position: relative;
+}
+.logo_form h5,
+.logo_form p.trust_head{
+    font-size:20px;
+    line-height:28px;
+    font-weight:500;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.logo_form_lt{
+    width: 50%;
+    float: left;
+    padding: 0 25px 0 0;
+}
+.logo_form_rt{
+    width: 50%;
+    float: left;
+    padding: 0 0 0 25px;
+}
+.logo_form_rt .logo_form_rt_box{
+    background: #F8F8F8;
+    padding: 50px; padding-top: 20px;
+}
+.logo_form h1{
+    text-align: left;
+    margin: 0 0 0px 0;
+}
+.trusted_logo{
+    float: left;
+    width: 100%;
+}
+.trusted_logo ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 -15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.trusted_logo li{
+    /* float: left; */
+    /* width: 33.33%; */
+    padding: 0 15px;
+    margin:0 0 30px 0;
+}
+.testi_sec{
+    float: left;
+    width: 100%;
+    background: #F8F8F8;
+    padding: 30px 32px 23px;
+    position: relative; 
+}
+.testi_sec .bds_slide .slick-list {
+    overflow: hidden;
+    padding:0;
+}
+.testi_sec .bds_slide .bds_sinner{
+    padding: 0;
+    opacity: 0;
+    height: 5px;
+}
+.testi_sec .bds_slide .bds_sinner.slick-current.slick-active{
+    opacity: 1;
+    height: auto;
+    min-height: 268px;
+}
+.bds_slide_outer .bds_slide .slick-track{
+    opacity: 0;
+}
+.testi_sec .bds_slide .bds_sinner > div{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: initial;
+    border: none;
+    padding: 0;
+}
+.testi_sec .bds_slide .slick-slide:nth-of-type(2n) {
+    margin-top: 0;
+}
+.testi_sec .bds_slide .bds_sinner p{
+    margin:2px 0 15px 0;
+}
+.client_detail{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.client_pic{
+    float: left;
+    width: 70px;
+    padding:4px;
+    border: 3px solid #5BCCF0;
+    border-radius: 50px;
+}
+.client_pic img{
+    width: 100%;
+    float: left;
+}
+.client_name{
+    float: left;
+    width: calc(100% - 70px);
+    padding-left: 10px;
+}
+.logo_form .client_name h4,
+.logo_form .client_name p.testimonial-name{
+    margin:0;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 700;
+}
+.testi_sec .bds_slide .bds_sinner .client_name p{
+    margin:5px 0 0 0;
+    font-size: 13px;
+    line-height: 22px;
+}
+.slick-dots{
+    margin:26px 0 0 0;
+    padding:0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+}
+.slick-dots li button {
+    font-size: 0;
+    border: none;
+    background: #F26322;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button,
+.slick-dots li button:hover{
+    opacity: 1;
+}
+.footer .f_bottom_left{
+    text-align: center;
+    padding: 31px 0 30px 0;
+}
+.footer .f_bottom_left p{
+    letter-spacing: 0.48px;
+    font-size: 16px;
+    margin: 0;
+    color: #52514E;
+}
+.logo_form .other_input,
+.logo_form form.wpcf7-form {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.logo_form form.wpcf7-form .wpcf7-response-output{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0px;
+}
+.submit_btn .wpcf7-spinner + span{
+    margin: 10px 0px 0px;
+}
+.protected_by{
+    margin: 0;
+}
+.protected_by a {
+    color: #FD581B;
+}
+.protected_by a:hover{
+    color: #35ade3;
+}
+.other_input p{
+    margin: 0 0 15px 0;
+}
+.other_input .c4wp-display-captcha-form{
+    margin: -20px 0 0 0;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
+    .logo_form .container {
+        max-width: 1100px !important;
+    }
+    .logo_form_lt{
+        padding: 0 15px 0 0;
+    }
+    .logo_form_rt{
+        padding: 0 0 0 15px;
+    }
+    .logo_form_rt .logo_form_rt_box{
+        padding: 50px 30px; padding-top: 20px;
+    }
+    .other_input .submit_btn input.wpcf7-submit{
+        padding: 11px 54px 11px 54px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .site_header .right {
+        text-align: right;
+    }
+    .submit_btn .wpcf7-spinner + span:last-child {
+        display: block;
+        margin: 10px 0 -10px 0;
+    }
+    .testi_sec .bds_slide .bds_sinner.slick-current.slick-active {
+        min-height: 326px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .logo_form_rt .logo_form_rt_box{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .logo_form_rt_box h1{
+        font-size: 31px;
+        line-height: 40px;  
+    }
+    .trusted_logo ul{
+        margin: 0 -7px;
+    }
+    .trusted_logo li{
+        padding: 0 7px;
+        width: 50%;
+        margin: 0 0 15px 0;
+    }
+    .logo_form_lt{
+        padding: 0 15px 0 0;
+    }
+    .logo_form_rt{
+        padding: 0 0 0 15px;
+    }
+    .logo {
+        width: 208px;
+    }
+    .testi_sec .bds_slide .bds_sinner.slick-current.slick-active {
+        min-height:414px;
+    }
+}

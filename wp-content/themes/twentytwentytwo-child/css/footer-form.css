@@ -1,0 +1,327 @@
+
+/* LET’S TALK CSS Start */
+.letstalk_sec{
+	float: left;
+	width: 100%;
+	background: rgba(237, 128, 2, 0.06);
+	padding: 100px 0 107px 0; 
+}
+.letstalk_sec .container{
+	max-width: 1208px;
+}
+.letstalk_left{
+	float: left;
+	width: 40.6983%;
+}
+.letstalk_left .lighted_head{
+	background: #41479B;
+	padding:7px 10px 7px;
+	font-size: 26px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.letstalk_left .letstalk_content{
+	margin: 4px 0 0 0;
+	float: left;
+    width: 100%;
+}
+.call_detail_box{
+	float: left;
+	width:100%;
+	background: url("../images/map_bg.webp") no-repeat bottom -10px center;
+	background-size: 480px;
+	padding: 50px 0 0 0;
+}
+.call_flag{
+	width: 90px;
+	float: left;
+	text-align: center;
+}
+.call_flag img{
+	width: 100%;
+	float: left;
+	padding: 0 5px;
+	margin: 0 0 15px 0;
+}
+.call_flag p{
+	clear: both;
+	font-size: 22px;
+	line-height: 22px;
+	letter-spacing: -0.22px;
+	font-weight: 600;
+	margin: 0;
+    text-align: center;
+}
+.call_detail{
+	width: 100%;
+	float: left;
+}
+.address{
+	float: left;
+    width: calc(100% - 121px);
+    padding: 0;
+    margin: 0 0 0 31px;
+}
+.address p a{
+	margin: 0;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight:800;
+	color: #070938;
+}
+.address p a:hover{
+	color: #35ade3;
+}
+.address p{
+	margin:0;
+	font-size: 18px;
+	line-height: 26px;
+	color: #52514E;
+	font-weight: 500;
+	display: inline-block;
+}
+.address p a{
+	display: inline-block;
+	margin:4px 0 11px 0;
+}
+.call_detail_canada{
+	margin:65px 0 0 0;
+}
+.letstalk_right {
+    width: 59.3017%;
+    float: left;
+    padding-left: 40px;
+}
+.letstalk_right > p {
+    margin: 0px 0px 21px;
+    color: #777777;
+}
+.letstalk_right .fl_name,
+.letstalk_right .other_input{
+    float: left;
+    width: 100%;
+	margin: 0px 0px 20px;
+}
+
+.wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea {
+    width: 100%;
+}
+.letstalk_right .fl_name .f_name {
+    float: left;
+    width: 49%;
+}
+.letstalk_right .fl_name .l_name {
+    float: right;
+    width: 49%;
+}
+.fl_name-email {
+    margin-bottom: 20px;
+}
+
+.wpcf7-form-control-wrap input {
+    height: 50px;
+    border: 1px solid #ED8002;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0.24px;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    border-radius: 10px;
+}
+.wpcf7-form-control-wrap input::placeholder,
+.wpcf7-form-control-wrap textarea::placeholder{
+    color: #000;
+    opacity: 1;
+    letter-spacing: 0.24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.wpcf7-form-control-wrap textarea{
+    border: 1px solid #ED8002;
+    padding: 20px 15px;
+    resize: none;
+    height: 110px;
+    border-radius: 0;
+    margin: 0px;
+    font-size: 16px;
+}
+.wpcf7-form-control-wrap p {
+    margin: 0;
+}
+.letstalk_right .form-section p {
+    margin: 0;
+}
+.wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-email{
+    text-transform: lowercase;
+}
+/*input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email::-webkit-input-placeholder,   
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email:-moz-placeholder,
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email::-moz-placeholder,
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email:-ms-input-placeholder, */
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email::placeholder
+{
+    text-transform: capitalize !important; 
+} 
+.wpcf7-form-control-wrap textarea {
+    border: 1px solid #ED8002;
+    padding: 20px 15px;
+    resize: none;
+    height: 110px;
+    border-radius: 10px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.submit_btn {
+    float: left;
+    width: 100%;
+}
+.submit_btn input.wpcf7-submit{
+    font-size: 16px;
+    padding: 11px 64px 11px 64px;
+    background: #F26322;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+    width: auto;
+    margin-right: 20px;
+
+}
+.submit_btn input.wpcf7-submit:hover{
+	background: #35ADE1;
+}
+.submit_btn .wpcf7-spinner{
+	margin: 0px;
+}
+
+.wpcf7-response-output {
+    clear: both;
+    margin-top: 0;
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+}
+.submit_btn .wpcf7-spinner
+{
+    margin: -6px 11px 0 9px;
+    vertical-align: middle;
+}
+.submit_btn span{
+    color: #070938;
+}
+.letstalk_right p.protected_by{
+    letter-spacing: 0px;
+    color: #070938;
+    line-height: 24px;
+    padding: 0 20px 0 0;
+    margin:11px 0 0 0;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+.letstalk_right p.protected_by a{
+    color: #FD581B;
+}
+.letstalk_right p.protected_by a:hover{
+    color: #35ade3;
+}
+/* LET’S TALK CSS End */
+p .wpcf7-form-control-wrap span:nth-child(2).wpcf7-not-valid-tip/*,
+.phone_input p .wpcf7-form-control-wrap span:nth-child(3).wpcf7-not-valid-tip*/{
+	display: block !important;
+}
+p .wpcf7-form-control-wrap span.wpcf7-not-valid-tip{
+	display: none !important;
+}
+
+.letstalk_right .other_input .c4wp-display-captcha-form{
+    margin: -15px 0 0 0;
+}
+.c4wp-display-captcha-form .c4wp_user_input_captcha{
+    border: 1px solid #ED8002;
+    padding: 5px 10px !important;
+    text-align: center;
+    font-size: 16px !important;
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
+    .address p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .address p a {  
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 700;
+        margin: 4px 0px 8px 0px;
+    }
+
+}
+@media only screen and (max-width: 1199px){
+    
+	.letstalk_sec {
+		padding: 80px 0 70px 0;
+	}
+	.letstalk_left{
+		width: 50%;
+		padding-right: 15px;
+	}
+	.letstalk_right {
+		width: 50%;
+		padding-left: 15px;
+	}
+    .letstalk_left .lighted_head{
+        font-size: 24px;
+    }
+    .letstalk_sec .submit_btn input.wpcf7-submit{
+        width: 220px;
+        height: 50px;
+        padding: 0 15px;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    .letstalk_sec .submit_btn input.wpcf7-submit::placeholder{
+        padding: 0 15px;
+        width: 220px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .letstalk_right .fl_name .f_name {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .letstalk_right .fl_name .l_name {
+        width: 100%;
+    }
+    .address{
+        margin: 0 0 0 20px;
+    }
+    .address p a{
+        font-size: 24px;
+    }
+    .call_detail_box{
+        background-position: center;
+        background-size: 100%;
+    }
+    .address p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .letstalk_right .other_input .submit_btn p span:last-child{
+        display: block;
+        margin: 10px 0 -25px 0;
+    }
+}

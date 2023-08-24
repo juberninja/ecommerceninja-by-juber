@@ -1,0 +1,444 @@
+.wd_canada_service_main_banner .all-bubble.green{
+    top: 150px;
+}
+.lighted_head{
+	display: inline-block;
+}
+.cities-section{
+    width: 100%;
+    margin: 0px auto;
+    float: left;
+    padding: 0px 0px 150px 0px;
+}
+.cities-section .container{
+    max-width: 1200px;
+}
+.cities-section .sec_heading{
+    margin-bottom: 34px;
+}
+.cities-section .cities-inner .cities-location-list{
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cities-section .cities-inner .cities-location-list li{
+    list-style-type: none;
+    float: left;
+    position: relative;
+    padding: 20px 30px 20px 60px;
+    width:calc(33.33% - 25px);
+    border-radius: 10px;
+    text-align: left;
+    margin: 0px 0 30px;
+}
+.cities-section .cities-inner .cities-location-list li.link a{
+    position: relative;
+    padding: 20px 30px 20px 60px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+    color: #070938;
+    display: block;
+}
+.cities-section .cities-inner .cities-location-list li.link a::before{
+    content: "";
+    background: url('../images/wds-cities-we-serve/location-pin.svg') no-repeat center;
+    position: absolute;
+    left: 18px;
+    height: 38px;
+    width: 30px;
+    top: 14px;
+}
+.cities-section .cities-inner .cities-location-list li.link {
+    padding: 0;
+}
+.cities-section .cities-inner .cities-location-list li.link::before{
+    display: none;
+}
+.cities-section .cities-inner .cities-location-list li::before{
+    content: "";
+    background: url('../images/wds-cities-we-serve/location-pin.svg') no-repeat center;
+    position: absolute;
+    left: 18px;
+    height: 38px;
+    width: 30px;
+    top: 12px;
+}
+.cities-section .cities-inner .cities-location-list li:nth-of-type(1n){
+    background: #FFEDF2;
+}
+
+.cities-section .cities-inner .cities-location-list li:nth-of-type(2n){
+    background: #E2F7F6;
+}
+
+.cities-section .cities-inner .cities-location-list li:nth-of-type(3n){
+    background: #FFF9E6;
+}
+
+.cities-section .cities-inner .cities-location-list li:nth-of-type(4n){
+    background: #E5F1FE;
+}
+.cities-section .cities-inner .cities-location-list li:nth-of-type(5n){
+    background: #F5F5F5;
+}
+.cities-section .cities-inner .cities-location-list li:nth-of-type(6n){
+    background: #efdb9a;
+}
+.cities-section .cities-inner .cities-location-list li.link:nth-of-type(6n) a{
+    background: #efdb9a;
+}
+.cities-section .cities-inner .cities-location-list li.link:nth-of-type(6n) a:hover{
+    background: #e2c35d;
+}
+
+
+.cities-section .cities-inner .cities-location-list li.link:nth-of-type(6n){
+    background: transparent;
+}
+.standout-section{
+    float: left;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px 150px 0px;
+}
+.standout-section .container{
+    max-width: 1200px;
+}
+.standout-section .sec_heading{
+    margin-bottom: 34px;
+    text-align: center;
+}
+.standout-section .lighted_head{
+    background: #16B49B;
+    display: inline-block;
+}
+.standout-section .standout-inner{
+    display: flex;
+    clear: both;
+}
+.standout-section .standout-inner .standout-col{
+    width: 50%;
+    float: left;
+}
+.standout-section .standout-inner .standout-content{
+    padding: 0px 40px 0px 0px;
+}
+.standout-img{
+    max-width: 100%;
+    width: 100%;
+}
+.cities-choose-section{
+    float: left;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px 150px 0px;   
+}
+.cities-choose-section .container{
+    max-width: 1200px;
+}
+.cities-choose-section .sec_heading{
+    margin-bottom: 34px;
+    text-align: right;
+}
+.cities-choose-section .lighted_head{
+    background: #BE40EC;
+    display: inline-block;
+}
+.cities-choose-section .our-wdp-content ul{
+    margin: 0px  -15px;
+    padding: 0px;
+    list-style: none;
+}
+.cities-choose-section .our-wdp-content ul li{
+	float: left;
+    max-width: calc(25% - 30px);
+	margin: 0px 15px 25px;
+	text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    padding: 20px 7px;
+	column-gap: 25px;	
+    background: #F5F5F5;
+
+}
+.cities-choose-section .our-wdp-content ul li .our-wdp-inner {
+    margin: 0px auto;
+    text-align: center;
+    max-width: 260px;
+}
+.cities-choose-section .our-wdp-content ul li .our-wdp-inner span{
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 90px;
+    height: 90px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #070938;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.cities-choose-section .our-wdp-content ul li .our-wdp-inner p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #070938;
+    margin: 8px 0px 0px 0px;
+}
+.wd_canada_service_main_banner .ser_left h1{
+    max-width: 100%;
+}
+.wd_canada_service_main_banner .ser_left h1, .wd_canada_service_main_banner .ser_left h1 .lighted_head {
+    font-size: 80px;
+    line-height: 100px;
+}
+.wd_canada_service_main_banner .ser_left {
+    width: 100%;
+    text-align: center;
+    padding: 64px 0px 0px;
+}
+.wd_canada_service_main_banner .ser_left .lighted_head {
+    display: block;
+    color: #D80621;
+    background: transparent;
+    text-transform: none;
+    padding: 0;
+}
+.wd_canada_service_main_banner .ser_left p {
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 500;
+    color: #555555;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 22px 0px 11px;
+    max-width: 100%;
+}
+.wd_canada_service_main_banner .serv.ban_bottom_btn {
+    justify-content: center;
+}
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
+    .wd_canada_service_main_banner .ser_left h1, .wd_canada_service_main_banner .ser_left h1 .lighted_head {
+        font-size: 70px;
+        line-height: 90px;
+    }
+}
+
+@media only screen and (max-width: 1199px) { 
+    .cities-section, .cities-choose-section, .standout-section{
+        padding: 0px 0px 60px 0px;
+    }
+    .cities-choose-section .our-wdp-content ul li{
+        max-width: calc(33.33% - 30px);
+    }
+	.lighted_head{
+		padding: 7px 10px;
+		line-height: normal;
+	}
+    .wd_canada_service_main_banner .ser_left h1,
+    .wd_canada_service_main_banner .ser_left h1 .lighted_head {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .wd_canada_service_main_banner .ser_left p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width: 991px)  {   
+    .wd_canada_service_main_banner .ser_left h1, .wd_canada_service_main_banner .ser_left h1 .lighted_head{
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .cities-section, .standout-section{
+        padding: 0px 0px 60px 0px;
+    }
+
+    .standout-section .sec_heading{
+        margin-bottom: 10px;
+    }
+    .standout-section .standout-inner{
+        flex-flow: column;
+    }
+    .standout-section .standout-inner .standout-col{
+        width: 100%;
+    }
+    .standout-section .standout-inner .standout-content{
+        padding: 0px;
+    }.cities-choose-section .our-wdp-content ul li{
+        max-width: calc(50% - 30px);
+    }
+    .cities-choose-section .our-wdp-content ul li .our-wdp-inner img{
+        max-width: 60px;
+    }
+    .cities-choose-section .our-wdp-content ul li .our-wdp-inner p{
+        font-size: 14px;
+        line-height: normal;
+    }
+	.standout-section .sec_heading{
+		line-height: normal;
+	}
+	.cities-choose-section .sec_heading{
+		text-align:left;
+	}
+    .wd_canada_service_main_banner .serv.ban_bottom_btn{
+        width: auto;
+        flex-flow: row;
+    }
+}
+
+@media only screen and (max-width: 767px)  {  
+    .cities-section, .standout-section{
+        padding: 0px 0px 60px 0px;
+    }
+	.cities-choose-section{
+		padding: 0px 0px 0px 0px; 
+	}
+    .standout-section .sec_heading{
+        margin-bottom: 10px;
+    }
+    .standout-section .standout-inner{
+        flex-flow: column;
+    }
+    .standout-section .standout-inner .standout-col,
+    .standout-section .standout-inner .standout-col img{
+        width: 100%;
+    }
+    .standout-section .standout-inner .standout-content{
+        padding: 0px;
+    }.cities-choose-section .our-wdp-content ul li{
+        max-width: calc(50% - 30px);
+    }
+    .cities-choose-section .our-wdp-content ul li .our-wdp-inner img{
+        max-width: 60px;
+    }
+    .cities-choose-section .our-wdp-content ul li .our-wdp-inner p{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .cities-section .cities-inner .cities-location-list{
+        column-gap: 0;
+    }
+    .cities-section .cities-inner .cities-location-list li{
+        width: calc(50% - 10px);
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        padding: 20px 10px 20px 50px;
+    }
+    .wd_canada_service_main_banner .ser_left{
+        padding: 0;
+    }
+    .wd_canada_service_main_banner .all-bubble.green,
+    .wd_canada_service_main_banner .all-bubble.gray.right{
+        display: none;
+    }
+    .cities-section .cities-inner .cities-location-list li::before{
+        left: 14px;
+    }
+    .wd_canada_service_main_banner .ser_left h1, .wd_canada_service_main_banner .ser_left h1 .lighted_head{
+        font-size: 40px;
+        line-height: 60px;
+        padding: 0;
+        margin: 0;
+    }
+    .wd_canada_service_main_banner .serv.ban_bottom_btn{
+        margin: 0 auto;
+        width: 230px;
+    }
+    
+    .wd_canada_service_main_banner .ban_bottom_btn .btn.scheacall {
+        background: url("../images/schedule_call_icon.svg") no-repeat right 24px center #F26322;
+        padding: 12px 60px 11px 25px;
+        text-transform: none;
+        font-weight: 400;
+    }
+    .wd_canada_service_main_banner .ban_bottom_btn .btn.scheacall:hover,
+    .wd_canada_service_main_banner .ban_bottom_btn .btn.get_st_btn:hover {
+        background-color: #35ade3;
+    }
+    .wd_canada_service_main_banner .ban_bottom_btn .btn.get_st_btn {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        padding: 10px 40px 9px;
+    }
+    .wd_canada_service_main_banner .ban_bottom_btn .btn.get_st_btn:after {
+        content: "";
+        background-image: url("../images/get_st_ic.svg");
+        width: 20px;
+        height: 17px;
+    }
+    .wd_canada_service_main_banner .ban_bottom_btn .btn.get_st_btn:hover:after {
+        background-image: url("../images/get_st_ic-hv.svg");
+    }
+    .wd_canada_service_main_banner{
+        clear: both;
+    }
+    .service_main_banner {
+        background: transparent linear-gradient(180deg, #F7F8FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        padding: 64px 0px 20px 0;
+        position: relative;
+    }
+    .wd_canada_service_main_banner .ser_left p {
+        font-size: 16px;
+    }
+    .cities-section .sec_heading{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 479px)  {  
+    .wd_canada_service_main_banner .ser_left h1, .wd_canada_service_main_banner .ser_left h1 .lighted_head{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .cities-section .cities-inner .cities-location-list li {
+        padding: 20px 20px 20px 55px;
+        width: 100%;
+    }
+    .cities-section, .standout-section{
+        padding: 0px 0px 60px 0px;
+    }
+	.cities-choose-section{
+		padding: 0px 0px 0px 0px; 
+	}
+    .standout-section .sec_heading{
+        margin-bottom: 10px;
+    }
+    .standout-section .standout-inner{
+        flex-flow: column;
+    }
+    .standout-section .standout-inner .standout-col{
+        width: 100%;
+    }
+    .standout-section .standout-inner .standout-content{
+        padding: 0px;
+    }
+    .cities-choose-section .our-wdp-content ul{
+        margin: 0px;
+    }
+    .cities-choose-section .our-wdp-content ul li{
+        max-width: calc(50% - 10px);
+        padding: 15px;
+        margin: 0px 5px 10px;
+    }
+    .cities-choose-section .our-wdp-content ul li .our-wdp-inner img{
+        max-width: 40px;
+    }
+    .cities-choose-section .our-wdp-content ul li .our-wdp-inner p{
+        font-size: 12px;
+        line-height: normal;
+    }
+	.cities-choose-section .our-wdp-content ul li .our-wdp-inner{
+		min-height: 95px;
+	}
+}

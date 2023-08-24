@@ -1,0 +1,169 @@
+.cms_page{
+    float: left;
+    width: 100%;
+    padding:170px 0 130px 0;
+    background: transparent linear-gradient(180deg, #F7F8FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+}
+.cms_page .container{
+    position: relative;
+    z-index: 0;
+}
+.cms_page .all-bubble.yellow{
+    top: 320px;
+    bottom: auto;
+}
+.cms_page .all-bubble.red {
+    bottom: auto;
+    top: 410px;
+    left: 65px;
+}
+.cms_page .all-bubble.big.sky-blue {
+    bottom: auto;
+    top: 430px;
+}
+.cms_page .all-bubble.blue {
+    left: auto;
+    top: 280px;
+    right: 17%;
+}
+.cms_page .all-bubble.gray.right {
+    bottom: auto;
+    top: 365px;
+    right: 3%;
+}
+.cms_page .all-bubble.yellow.right {
+    right: 2.5%;
+}
+.cms_page .all-bubble.dark-blue {
+    right: 34%;
+    bottom: auto;
+    top: 390px;
+}
+.cms_page .all-bubble.green.border {
+    bottom: auto;
+    right: 9%;
+    top: 460px;
+}
+.cms_page ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cms_page ul li h2{
+    font-size: 20px;
+}
+.cms_page ul li h3{
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 52px;
+}
+.cms_page ul li p{
+    padding-left: 52px;
+}
+.cms_page ul li h2 strong {
+    color: #00b2ff;
+    display: inline-block;
+    margin-right: 0;
+    width: 44px;
+    float: left;
+    height: 70px;
+}
+.cms_page ul li h3 strong {
+    color: #00b2ff;
+    display: inline-block;
+    margin-right: 16px;
+}
+.cms_page a{
+    color: #00b2ff;
+}
+.cms_page a:hover{
+    color: #070938;
+}
+.refund-policy li{
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+.refund-policy li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/rp-arrow.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 100%;
+}
+.terms_conditions.cms_page ul li h2 strong,
+.terms_conditions.cms_page ul li h3 strong{
+    color: #ff5800;
+}
+.terms_conditions ul ul {
+    padding-left: 52px;
+}
+.terms_conditions ul ul li{
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 22px;
+}
+.terms_conditions ul ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/tc-arrow.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 100%;
+}
+.cms_page.privacy-policy p br{
+    display: none;
+}
+
+@media only screen and (max-width:1199px){
+    .letstalk_sec .letstalk_right .fl_name .f_name {
+        float: left;
+        width: 49%;
+    }
+    .letstalk_sec .letstalk_right .fl_name .l_name {
+        float: right;
+        width: 49%;
+    }
+    .cms_page.privacy-policy{
+        padding: 170px 0 30px 0;
+    }
+}
+@media only screen and (max-width: 991px){
+    .letstalk_sec .letstalk_right .fl_name,
+    .letstalk_sec .letstalk_right .other_input {
+        float: left;
+        width: 100%;
+        margin: 0px 0px 20px;
+    }
+    .letstalk_sec .letstalk_right .fl_name .f_name {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .letstalk_sec .letstalk_right .fl_name .l_name {
+        width: 100%;
+    }
+    .cms_page.privacy-policy{
+        padding: 140px 0 30px 0;
+    }
+}
+@media only screen and (max-width: 767px){
+    .cms_page.refund-policy{
+        padding-top: 80px;
+    }
+    .letstalk_sec .letstalk_right .fl_name .f_name,
+    .letstalk_sec .letstalk_right .fl_name,
+    .letstalk_sec .letstalk_right .other_input{
+        margin: 0;
+    }
+
+}

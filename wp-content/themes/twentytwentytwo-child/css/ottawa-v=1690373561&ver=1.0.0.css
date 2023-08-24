@@ -1,0 +1,323 @@
+.ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new:after{
+    background: transparent linear-gradient(180deg, #F0FFFD 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head{
+    color:#00A78D;
+}
+.ottawa_main_banner_new .banner_box li{
+    padding: 24px 10px;
+}
+.banner_box li p{
+    text-transform: uppercase;
+}
+.banner_box{
+    padding:0 0 200px 0;
+}
+.ottawa_page .service_main_banner_new .bigcommerce_overview .lighted_head {
+    background: #00A78D;
+}
+.ottawa_page .service_main_banner_new .bc_ovr_left p:nth-child(3) {
+    margin: 0 0 15px 0;
+}
+.ottawa_page .service_main_banner_new .bigcommerce_overview .sec_heading {
+    padding-bottom: 10px;
+}
+.ottawa_page .webdesign_agency_form .wpcf7-form-control-wrap input,
+.ottawa_page .webdesign_agency_form .wpcf7-form-control-wrap textarea,
+.ottawa_page .webdesign_agency_form .c4wp-display-captcha-form .c4wp_user_input_captcha {
+    border-color: #00A78D;
+}
+.ottawa_page .service-form-row.submit_btn .wpcf7-submit {
+    background: #00A78D;
+}
+.business_success_sec .sec_heading{
+    text-align: center;
+}
+.ottawa_page .mng_spt_inr {
+    border: 1px solid #50BCEB;
+}
+.ottawa_page .manage_support_sec .wpcf7-list-item input:checked ~ .wpcf7-list-item-label{
+    background:#C6EEFF;
+    border: 1px solid #50BCEB;
+}
+.ottawa_page .mng_spt_right ul li:before {
+    background: url("../images/cs-cart/cs-listing-icon.svg") no-repeat center;
+}
+.ottawa_page .manage_support_sec,
+.ottawa_page .service_why_sec{
+    padding-bottom: 150px;
+}
+.ottawa_main_banner_new.service_main_banner_new .ser_left p {
+    max-width: 100%;
+}
+.ottawa_main_banner_new.service_main_banner_new .bc_ovr_left p:nth-child(3){
+    margin-top: 0;
+}
+.ottawa_main_banner_new.service_main_banner_new .bigcommerce_overview .sec_heading{
+    padding-bottom: 10px;
+}
+
+
+
+
+/* kitchener */
+.kitchener_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new:after {
+    background: transparent linear-gradient(180deg, #FFFBED 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.kitchener_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head {
+    color: #89711B;
+}
+.kitchener_page .service_main_banner_new .bigcommerce_overview .lighted_head {
+    background: #89711B;
+}
+.kitchener_page .webdesign_agency_form .wpcf7-form-control-wrap input,
+.kitchener_page .webdesign_agency_form .wpcf7-form-control-wrap textarea,
+.kitchener_page .webdesign_agency_form .c4wp-display-captcha-form .c4wp_user_input_captcha {
+    border-color: #89711B;
+}
+.kitchener_page .service-form-row.submit_btn .wpcf7-submit {
+    background: #89711B;
+}
+.kitchener_page .mng_spt_inr {
+    border: 1px solid #50BCEB;
+}
+.kitchener_page .manage_support_sec .wpcf7-list-item input:checked ~ .wpcf7-list-item-label{
+    background:#C6EEFF;
+    border: 1px solid #50BCEB;
+}
+.kitchener_page .mng_spt_right ul li:before {
+    background: url("../images/cs-cart/cs-listing-icon.svg") no-repeat center;
+}
+.kitchener_page .manage_support_sec,
+.kitchener_page .service_why_sec{
+    padding-bottom: 150px;
+}
+.kitchener_page .service_main_banner_new .bc_ovr_left p:nth-child(3){
+    margin-top: 0;
+}
+/* kitchener */
+
+
+/* oakville */
+.oakville_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new:after {
+    background: transparent linear-gradient(180deg, #F4F4FF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.oakville_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head {
+    color: #3E4095;
+}
+.oakville_page .service_main_banner_new .bigcommerce_overview .lighted_head {
+    background: #3E4095;
+}
+.oakville_page .webdesign_agency_form .wpcf7-form-control-wrap input,
+.oakville_page .webdesign_agency_form .wpcf7-form-control-wrap textarea,
+.oakville_page .webdesign_agency_form .c4wp-display-captcha-form .c4wp_user_input_captcha {
+    border-color: #3E4095;
+}
+.oakville_page .service-form-row.submit_btn .wpcf7-submit {
+    background: #3E4095;
+}
+.oakville_page .service_main_banner_new .bc_ovr_left p:nth-child(3) {
+    margin: 0 0 28px 0;
+}
+/* oakville */
+
+
+/* waterloo */
+.waterloo_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new:after {
+    background: transparent linear-gradient(180deg, #FFF9E8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.waterloo_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head {
+    color: #FFC324;
+}
+.waterloo_page .service_main_banner_new .bigcommerce_overview .lighted_head {
+    background: #FFC324;
+}
+.waterloo_page .webdesign_agency_form .wpcf7-form-control-wrap input,
+.waterloo_page .webdesign_agency_form .wpcf7-form-control-wrap textarea,
+.waterloo_page .webdesign_agency_form .c4wp-display-captcha-form .c4wp_user_input_captcha {
+    border-color: #FFC324;
+}
+.waterloo_page .service-form-row.submit_btn .wpcf7-submit {
+    background: #FFC324;
+}
+.waterloo_page .mng_spt_inr {
+    border: 1px solid #50BCEB;
+}
+.waterloo_page .manage_support_sec .wpcf7-list-item input:checked ~ .wpcf7-list-item-label{
+    background:#C6EEFF;
+    border: 1px solid #50BCEB;
+}
+.waterloo_page .mng_spt_right ul li:before {
+    background: url("../images/cs-cart/cs-listing-icon.svg") no-repeat center;
+}
+.waterloo_page .manage_support_sec,
+.waterloo_page .service_why_sec{
+    padding-bottom: 150px;
+}
+/* waterloo */
+
+/* mississauga */
+.mississauga_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new:after {
+    background: transparent linear-gradient(180deg, #EAF6FF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.mississauga_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head {
+    color: #016ABB;
+}
+.mississauga_page .service_main_banner_new .bigcommerce_overview .lighted_head {
+    background: #016ABB;
+}
+.mississauga_page .webdesign_agency_form .wpcf7-form-control-wrap input,
+.mississauga_page .webdesign_agency_form .wpcf7-form-control-wrap textarea,
+.mississauga_page .webdesign_agency_form .c4wp-display-captcha-form .c4wp_user_input_captcha {
+    border-color: #016ABB;
+}
+.mississauga_page .service-form-row.submit_btn .wpcf7-submit {
+    background: #016ABB;
+}
+.mississauga_page .mng_spt_inr {
+    border: 1px solid #50BCEB;
+}
+.mississauga_page .manage_support_sec .wpcf7-list-item input:checked ~ .wpcf7-list-item-label{
+    background:#C6EEFF;
+    border: 1px solid #50BCEB;
+}
+.mississauga_page .mng_spt_right ul li:before {
+    background: url("../images/cs-cart/cs-listing-icon.svg") no-repeat center;
+}
+.mississauga_page .manage_support_sec,
+.mississauga_page .service_why_sec{
+    padding-bottom: 150px;
+}
+/* mississauga */
+
+/* guelph */
+.guelph_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new:after {
+    background: transparent linear-gradient(180deg, #FFF4F4 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.guelph_page .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head {
+    color: #C92424;
+}
+.guelph_page .service_main_banner_new .bigcommerce_overview .lighted_head {
+    background: #C92424;
+}
+.guelph_page .webdesign_agency_form .wpcf7-form-control-wrap input,
+.guelph_page .webdesign_agency_form .wpcf7-form-control-wrap textarea,
+.guelph_page .webdesign_agency_form .c4wp-display-captcha-form .c4wp_user_input_captcha {
+    border-color: #C92424;
+}
+.guelph_page .service-form-row.submit_btn .wpcf7-submit {
+    background: #C92424;
+}
+.guelph_page .mng_spt_inr {
+    border: 1px solid #50BCEB;
+}
+.guelph_page .manage_support_sec .wpcf7-list-item input:checked ~ .wpcf7-list-item-label{
+    background:#C6EEFF;
+    border: 1px solid #50BCEB;
+}
+.guelph_page .mng_spt_right ul li:before {
+    background: url("../images/cs-cart/cs-listing-icon.svg") no-repeat center;
+}
+.guelph_page .manage_support_sec,
+.guelph_page .service_why_sec{
+    padding-bottom: 150px;
+}
+/* guelph */
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
+    .ottawa_main_banner_new .banner_box li p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .service_main_banner {
+        padding: 64px 0px 104px 0;
+    }
+    .ser_left h1{
+        margin: 0;
+    }
+    .ottawa_page .service_main_banner_new .ser_left p {
+        max-width: 100%;
+    }
+    .ottawa_page .service_main_banner_new .certified_logo {
+        right: -10px;
+        top: -140px;
+    }
+    .banner_box {
+        padding: 0 0 150px 0;
+    }
+    .ottawa_page .manage_support_sec, .ottawa_page .service_why_sec {
+        padding-bottom: 80px;
+    }
+    .banner_box li p{
+        text-align: center;
+        height: 36px;
+        overflow: hidden;
+    }
+    .ottawa_page .banner_box li img{
+        width: auto;
+        height: 75px;
+    }
+}
+@media only screen and (max-width:991px){
+    .ottawa_main_banner_new .ban_bottom_btn .btn.get_st_btn {
+        padding: 9px 48px 8px;
+    }
+    .ottawa_main_banner_new.service_main_banner_new .bc_ovr_left p{
+        max-width: 100%;
+    }
+    .service_main_banner {
+        background: transparent linear-gradient(180deg, #FFF5F9 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        padding: 64px 0px 50px 0;
+    }
+    .oakville_page .service_main_banner {
+        background: transparent linear-gradient(180deg, #F4F4FF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    }
+    .kitchener_page .service_main_banner {
+        background: transparent linear-gradient(180deg, #FFFBED 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    }
+    .waterloo_page .service_main_banner {
+        background: transparent linear-gradient(180deg, #FFF9E8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    }
+    .mississauga_page .service_main_banner {
+        background: transparent linear-gradient(180deg, #EAF6FF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    }
+    .guelph_page .service_main_banner {
+        background: transparent linear-gradient(180deg, #FFF4F4 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    }
+    .ottawa_page .service_main_banner_new .certified_logo {
+        top: -80px;
+    }
+    .banner_box {
+        padding: 0 0 50px 0;
+    }
+}
+@media only screen and (max-width:767px){
+    .ottawa_main_banner_new.service_main_banner_new .bigcommerce_overview .bc_ovr_left{
+        width: 100%;
+    }
+    .ottawa_main_banner_new.service_main_banner_new .bigcommerce_overview .bc_ovr_right{
+        width: 100%;
+        padding: 0;
+    }
+    .ottawa_main_banner_new.service_main_banner_new .ser_left p{
+        margin-bottom: 20px;
+    }
+    .certified_logo{
+        margin:20px 0;
+    }
+}
+@media only screen and (max-width:413px){
+    .ottawa_page .banner_box li p {
+        font-size: 14px;
+    }
+    .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left .lighted_head{
+        line-height: 36px;
+    }
+    .ottawa_main_banner_new.lead_service_main_banner_new.service_main_banner_new .ser_left h1{
+        line-height: 40px;
+        margin: 0 0 20px 0;
+    }
+}

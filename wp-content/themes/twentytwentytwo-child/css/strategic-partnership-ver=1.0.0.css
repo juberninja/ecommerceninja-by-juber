@@ -1,0 +1,197 @@
+.service_main_banner{
+	float: left;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    z-index: 0;
+    background-color: #fafafa;
+    padding: 130px 0px;
+}
+.service_main_banner > .container{
+    max-width: 1204px;
+}
+.ban_bottom_btn .btn.scheacall{
+    background: url("../images/schedule_call_icon.svg") no-repeat right 32px center #F26322;
+    padding: 12px 68px 11px 32px;
+    text-transform: none;
+    font-weight: 400;
+}
+.ban_bottom_btn .btn.scheacall:hover {
+    background: url("../images/schedule_call_icon.svg") no-repeat right 32px center #35ade3;
+}
+.ser_right{
+	float: left;
+    width: 36%;
+    margin: auto;
+	padding: 104px 0px 0px 78px;
+    text-align: right;
+}
+.ser_right > img {
+    margin-top: 23px;
+}
+.ser_left{
+	float: left;
+	width: 64%;
+    padding: 104px 0px 0px;
+	margin: 0px;
+}
+.ser_left h1{
+	margin: 0px;
+	letter-spacing: -0.36px;
+	max-width: 722px;
+}
+.ser_left .lighted_head{
+	background: #ED185A;
+    font-size: 30px;
+    margin: 0px 9px 0 0;
+	letter-spacing: 0;
+}
+.ser_left .ser_sub_head {
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 20px;
+    margin: 32px 0px 24px 0px;
+}
+.ser_left h1 .blue_dot{
+	color: #50BCEB;
+}
+.ser_left p {
+    max-width: 638px;
+}
+.serv.ban_bottom_btn {
+    display: flex;
+    gap: 30px;
+    margin: 27px 0px 0px 0px;
+}
+.ban_bottom_btn .btn.get_st_btn {
+    border: 2px solid #F26322;
+    background-image: none;
+    background-color: transparent;
+    color: #F26322;
+    padding: 10px 30px 8px 32px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.ban_bottom_btn .btn.get_st_btn:hover {
+    background-color: #35ade3;
+    border-color: #35ade3;
+    color: #fff;
+}
+.ban_bottom_btn .btn.get_st_btn:after {
+    content: "";
+    background-image: url("../images/get_st_ic.svg");
+    width: 20px;
+    height: 17px;
+}
+.ban_bottom_btn .btn.get_st_btn:hover:after {
+    background-image: url("../images/get_st_ic-hv.svg");
+}
+.partner_work_list {
+    float: left;
+    width: 100%;
+    margin: 160px 0px 143px 0;
+}
+.partner_work_list .container{
+    max-width: 1205px;
+}
+.partner_col_sec{
+    margin: 0px -15px;
+    clear: both;
+    display: flex;
+    align-items: center;
+}
+.partner_col{
+    width: 50%;
+    float: left;
+    padding: 0px 15px;
+}
+.partner_col_sec:nth-child(odd) .partner_col.img{
+    text-align: right;
+}
+.partner_work_list .partner_col.content .ftheading{
+    line-height: 50px;
+}
+.partner_col ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.partner_col ul li{
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 0 30px 0 ;
+}
+.partner_col ul li:before {
+    content: "";
+    background: url("../images/darkred_services_arrow.svg") no-repeat center;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    border-radius: 50%;
+}
+.partner_col ul.arrow_blue li:before {
+    background: url("../images/darkblue_services_arrow.svg") no-repeat center;
+}
+.partner_col ul.arrow_purple li:before {
+    background: url("../images/lightpurple_services_arrow.svg") no-repeat center;
+}
+.partner_col_sec_mid {
+    padding: 100px 0;
+}
+.partner_col_sec_mid .lighted_head{
+    background: #1C6CD4;
+}
+.partner_col_sec_last .lighted_head{
+    background: #AF60E6;
+}
+
+
+@media only screen and (max-width:1199px){
+    .ser_right{
+        padding-left: 20px;
+    }
+    .partner_work_list {
+        margin: 80px 0px 40px 0;
+    }
+    .partner_col_sec.partner_col_sec_last{
+        margin-bottom: 40px;
+    }
+    .serv.ban_bottom_btn{
+        flex-flow: column;
+        width: 245px;
+        gap: 20px;
+    }
+    .ban_bottom_btn .btn.get_st_btn {
+        padding: 10px 48px 8px;
+    }
+    .service_main_banner .ser_left .lighted_head{
+        background: #0F53F9;
+        margin-right: 0;
+    }
+    .ser_left h1 {
+        font-size: 26px;
+        line-height: 46px;
+    }
+    .all-bubble{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1199px){
+    .ser_left{
+        width: 50%;
+    }
+    .ser_right{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    .serv.ban_bottom_btn{
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38">
+	<title>blog-yes-svg</title>
+	<defs>
+		<image  width="34" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbBAMAAADrHECUAAAAAXNSR0IB2cksfwAAACpQTFRFAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAAAIAArcGohAAAAA50Uk5TABcm5Y//jid+5o0BzZ2ov23wAAAAhklEQVR4nF3Puw3AIAwEUEJDmx1YIfQMgVNEiuQ10mWJ9Bkkw4WPENy5wTo9GdsYqNVQ2Y0TL5FIkMREEGUiiAqRnYlo7tzdkqsER8WJSO4iTvFtPpC6xCBfm+ee8r5jYJx3qZ+eg3QE6/qeKG4PF3kiHc1HN6RzUhCQihQTG4hkpJwso/0BUsA2WdjjZTYAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" x="2" y="5"/>
+</svg>

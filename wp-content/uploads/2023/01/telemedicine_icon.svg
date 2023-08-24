@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="medical_services_black_24dp" transform="translate(-0.5 -0.5)">
+    <g id="Group_10364" data-name="Group 10364">
+      <rect id="Rectangle_3454" data-name="Rectangle 3454" width="43" height="43" transform="translate(0.5 0.5)" fill="none"/>
+    </g>
+    <g id="Group_10366" data-name="Group 10366" transform="translate(3.071 3.071)">
+      <g id="Group_10365" data-name="Group 10365">
+        <path id="Path_19227" data-name="Path 19227" d="M35.171,9.371H27.8V5.686A3.7,3.7,0,0,0,24.114,2H16.743a3.7,3.7,0,0,0-3.686,3.686V9.371H5.686A3.7,3.7,0,0,0,2,13.057V35.171a3.7,3.7,0,0,0,3.686,3.686H35.171a3.7,3.7,0,0,0,3.686-3.686V13.057A3.7,3.7,0,0,0,35.171,9.371ZM16.743,5.686h7.371V9.371H16.743ZM27.8,25.957H22.271v5.529H18.586V25.957H13.057V22.271h5.529V16.743h3.686v5.529H27.8Z" transform="translate(-2 -2)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

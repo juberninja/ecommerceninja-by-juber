@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38">
+	<title>blog-no-svg</title>
+	<defs>
+		<image  width="27" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbBAMAAAB/+ulmAAAAAXNSR0IB2cksfwAAAB5QTFRF/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAAu9YgPgAAAAp0Uk5TAAwKvsQN/xfC9fWAWwEAAACBSURBVHicbZExDoAgDEW/LK64uXMFww2IK4cgRC+k15W2aMKPDDz6P7RQAEweOhZDSAq3ZUUsylCTQeliFblB2VSRBY2iiqxhyR0m1z3aJmCVxSnT4S1lH1Y/9MjKf7aZr91NYL4kvPHr0tkxM9Udb0V3phfRe6kb1CvuJPV5+IUH0yRQtw5/CT8AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" x="5" y="5"/>
+</svg>

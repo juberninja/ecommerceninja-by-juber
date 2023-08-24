@@ -1,0 +1,326 @@
+.ser_left .lighted_head{
+    background: #50BCEB;
+}
+
+.ban_bottom_btn .btn {
+    background: url("../images/schedule_call_icon.svg") no-repeat right 32px center #F26322;
+    padding: 12px 68px 11px 32px;
+    text-transform: none;
+    font-weight: 400;
+}
+.ban_bottom_btn .btn:hover {
+    background: url("../images/schedule_call_icon.svg") no-repeat right 32px center #35ade3;
+}
+.project_top .lighted_head {
+    background:#0E61DB;
+}
+.project_list li:last-child{
+    margin-right: 0;
+}
+.service_main_banner .all-bubble.yellow.left{
+    bottom: auto;
+    top: 230px;
+}
+.ban_bottom_btn .btn.get_st_btn {
+    border: 2px solid #F26322;
+    background-image: none;
+    background-color: transparent;
+    color: #F26322;
+    padding: 10px 30px 8px 32px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.service_main_banner .all-bubble.yellow.right {
+    bottom: auto;
+    top: 120px;
+}
+.service_main_banner .all-bubble.red {
+    bottom: auto;
+    top: 300px;
+}
+.service_main_banner .all-bubble.dark-blue {
+    right: 52%;
+    bottom: 68px;
+}
+.hp_client_sec .all-bubble.green{
+    height: 60px;
+    width: 60px;
+    right: 8%;
+    top: 145px;
+    background: #5ED6C0;
+}
+.hp_client_sec .all-bubble.yellow{
+    left: 70px;
+    bottom: 0;
+}
+.hp_client_sec .all-bubble.red{
+    bottom: 100px;
+    left: 120px;
+}
+.project_sec .all-bubble.blue{
+    top:63%;
+    left:50px;
+}
+.project_sec .all-bubble.yellow{
+    left: auto;
+    right: 110px;
+    top: 55%;
+    bottom: auto;
+}
+.project_sec .all-bubble.red{
+    left: auto;
+    right: 80px;
+    top: 45%;
+    bottom: auto;
+}
+.serv_industries_sec .lighted_head{
+    background: #8DB84A;
+}
+.serv_industries_sec{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 150px 0 0 0;
+}
+.serv_industries_sec .all-bubble.blue{
+    left: 60px;
+    top: 230px;
+}
+.serv_industries_sec .all-bubble.dark-blue{
+    right: auto;
+    bottom: auto;
+    top: 400PX;
+    left: 160px;
+}
+.industries_list{
+    float: left;
+    width: 100%;
+    margin: 34px 0 0 0;
+}
+.industries_list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.industries_list ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0 0 58px 0;
+}
+.industries_list ul li a{
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #070938;
+}
+.industries_list ul li a span{
+    display: block;
+}
+.industries_list .industries_icon {
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 8px 0;
+}
+
+.serv_technologies_sec{
+    clear: both;
+    padding:87px 0px 125px 0px;
+    position: relative;
+}
+.serv_technologies_sec .all-bubble.green{
+    width: 84px;
+    height: 84px;
+    background: #F44336;
+    right:60px;
+    top: 700px;
+}
+.service_hire{
+    padding:125px 0 0 0;
+}
+.service_hire .lighted_head{
+    background: #BE40EC;
+}
+.hire_right .sec_heading{
+    margin-bottom: 29px;
+}
+.service_hire .all-bubble.blue{
+    right: 130px;
+    left: auto;
+    top: 1200px;
+}
+.service_hire .all-bubble.dark-blue{
+    right: 80px;
+    left: auto;
+    top: 1360px;
+}
+.service_hire .hire_left{
+    padding: 0 20px 0 0;
+}
+.service_hire .hire_right {
+    padding: 0 0 0 20px;
+}
+.service_hire .hire_right p{
+    margin-bottom:20px;
+}
+.service_hire .btn{
+    padding:13px 60px;
+}
+.service_hire .btn:after{
+    display: none;
+}
+.serv_pricing_inner .price_col .price_col_inner p{
+    overflow: hidden;
+    height: 182px;
+}
+.service_why{
+    position: relative;
+    padding: 150px;
+}
+.service_why .sec_heading{
+    text-align: left;
+    margin: 0px 0px 31px 0px;
+}
+.service_why .lighted_head {
+    background-color: #A3722E;
+}
+.service_why .all-bubble.brown {
+    right: auto;
+    left: 40px;
+    top: 1090px;
+    width: 84px;
+    height: 84px;
+    background: #A3722E;
+}
+.ser_why_content ul{
+    margin: 0px -17px;
+}
+.bds_slide .slick-slide:nth-child(9) .bds_img_head .platform_ic{
+    background: #5A810F;
+}
+.bds_slide .slick-slide:nth-child(10) .bds_img_head .platform_ic{
+    background: #713F18;
+}
+.bds_slide .slick-slide:nth-child(11) .bds_img_head .platform_ic{
+    background:#FF4343;
+}
+.serv_technologies_sec .tab-content-wrapper .service_tab{
+    display: none;
+}
+.serv_technologies_sec .tab-content-wrapper .service_tab.active{
+    display: block;
+}
+.serv_technologies_sec .sec_heading{
+    text-align: right;
+}
+.tab-main-wrapper{
+    margin:-3px 0 0 0;
+    float: left;
+    width: 100%;
+}
+.tab-main-wrapper .tab-content-wrapper{
+    float: left;
+    width: 100%;
+}
+.serv_technologies_sec .sec_heading .lighted_head{
+    background: #BE40EC;
+}
+.serv_technologies_sec .tabs .tab-link{
+    background: #FFFFFF;
+    border: 1px solid #E5ECF9;
+    border-radius: 5px;
+    margin: 0 8px;
+    width: calc(20% - 16px);
+    cursor: pointer;
+    padding:12.5px 10px;
+}
+.serv_technologies_sec .tabs .tab-link:hover,
+.serv_technologies_sec .tabs .tab-link.active{
+    color: #ffffff;
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.16);
+}
+.serv_technologies_sec .tabs .tab-link.fronttab:hover,
+.serv_technologies_sec .tabs .tab-link.fronttab.active{
+    background: #F44336;
+}
+.serv_technologies_sec .tabs .tab-link.fronttab{
+    border-bottom: 3px #F44336 solid;
+}
+.serv_technologies_sec .tabs .tab-link.backtab{
+    border-bottom: 3px #00B5E8 solid;
+}
+.serv_technologies_sec .tabs .tab-link.backtab:hover,
+.serv_technologies_sec .tabs .tab-link.backtab.active{
+    background: #00B5E8;
+}
+.serv_technologies_sec .tabs .tab-link.datatab{
+    border-bottom: 3px #24292D solid;
+}
+.serv_technologies_sec .tabs .tab-link.datatab:hover,
+.serv_technologies_sec .tabs .tab-link.datatab.active{
+    background: #24292D;
+}
+.serv_technologies_sec .tabs .tab-link.designtooltab{
+    border-bottom: 3px #9E8868 solid;
+}
+.serv_technologies_sec .tabs .tab-link.designtooltab:hover,
+.serv_technologies_sec .tabs .tab-link.designtooltab.active{
+    background: #9E8868;
+}
+.serv_technologies_sec .tabs .tab-link.cloudtab{
+    border-bottom: 3px #000000 solid;
+}
+.serv_technologies_sec .tabs .tab-link.cloudtab:hover,
+.serv_technologies_sec .tabs .tab-link.cloudtab.active{
+    background: #000000;
+}
+.web_serv_pricing_model_sec .sec_heading br{
+    display: none;
+}
+
+
+@media only screen and (max-width:1600px) and (min-width:1200px){
+    .bds_slide .bds_sinner > div{
+        max-width: 360px;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .serv_technologies_sec .tab-main-wrapper .tabs .tab-link {
+        margin: 0px 5px -1px;
+        width: calc(20% - 10px);
+    }
+    .serv_technologies_sec .tab-content-wrapper .service_tab ul li {
+        width: 20%;
+    }
+    .serv_technologies_sec .all-bubble {
+        display: none;
+    }
+    .service_hire {
+        padding:80px 0 0 0;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    .serv_technologies_sec .tab-main-wrapper .tabs .tab-link{
+        font-size: 16px;
+    }
+    
+    .serv_technologies_sec .tab-content-wrapper .service_tab ul li {
+        width: 33.33%;
+    }
+    .web_serv_pricing_model_sec .sec_heading .lighted_head{
+        font-size: 22px;
+    }
+    .web_serv_pricing_model_sec .sec_heading br{
+        display: block;
+    }
+    .service_why {
+        padding: 80px 0px 0px 0px;
+    }
+    
+}

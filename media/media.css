@@ -1,0 +1,55 @@
+@media (max-width: 1920px) { 
+	.container, .container-sm, .container-md, .container-lg, .container-xl { max-width: 1320px;}
+	}
+
+
+	@media (max-width: 1199px) { 	
+	
+
+		h1, h2, h3, h4, h5, h6 { line-height:1.22; }
+		h1 { font-size: 50px;}
+		h2 { font-size: 40px;}
+		h3 { font-size: 30px;}
+		h4 { font-size: 26px;} 
+		h5 { font-size: 22px;} 
+		h6 { font-size: 18px;}
+			
+		p{font-size: 18px;}
+			
+		}
+
+/* 01 General Media Query (iPhone, iPad, Small Tablet, 979 / 80 px)
+=============================================================== */
+@media (max-width:991px) { 
+/*** Global Classes CSS BOF ***/
+
+} 
+
+/* 02 iPad &amp; Small Tablet (Portrait) (768 * 980)
+============================================================== */
+@media (max-width: 767px) {
+	
+/*** Global Classes CSS BOF ***/
+h1, h2, h3, h4, h5, h6 { line-height:1.22; }
+
+h1 { font-size: 30px;}
+h2 { font-size: 26px;}
+h3 { font-size: 22px;}
+h4 { font-size: 18px;} 
+h5 { font-size: 16px;} 
+h6 { font-size: 14px;}
+	
+p { line-height:1.7; }
+	
+}
+	
+/* 04 All Mobile Device (iPhone, Android, Window)(320 * 480)
+============================================================== */
+@media (max-width:375px) {
+	
+}
+
+
+
+
+	

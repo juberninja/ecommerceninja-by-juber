@@ -1,0 +1,215 @@
+.mobile-section .header {
+    float: left;
+    width: 100%;
+    background: #fafafa;
+}
+.mobile-content.mobile-section .hp_main_banner{
+    background: #f9fafc;
+}
+.mobile-section .serv_industries_sec {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 60px 0 0 0;
+    padding: 50px 0;
+    background: #E7EFFB;
+    overflow: hidden;
+}
+.mobile-section .serv_industries_sec .slick-list{
+    overflow: visible;
+    padding: 0;
+}
+.mobile-section .industries_list a{
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #070938;
+}
+.mobile-section .industries_list .industries_icon {
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 8px 0;
+}
+.mobile-section .industries_list ul li a span {
+    display: block;
+}
+.mobile-section .industries_list{
+    margin:0 45px 0 0;
+    text-align: center;
+    float: none;
+    width: auto;
+}
+.mobile-content.mobile-section .bds_slide .slick-slide:nth-of-type(2n){
+    margin: 0;
+}
+.mobile-content.mobile-section .bds_slide .bds_sinner {
+    padding: 0px;
+}
+.mobile-content.mobile-section .bds_sinner_inner{
+    border: none;
+    border-radius: 0;
+    padding:0;
+    min-height: auto;
+    max-width: 100%;
+}
+.mobile-section .serv_industries_sec .sec_heading{
+    margin: 0 0 30px 0;
+    text-align: left;
+}
+.mobile-section .serv_industries_sec .lighted_head{
+    background: #96B257;
+}
+.mobile-section .serv_technologies_sec{
+    float: left;
+    width: 100%;
+    padding: 60px 0 52px 0;
+}
+.mobile-section .serv_technologies_sec .lighted_head{
+    background: #BE40EC;
+}
+.mobile-section .serv_technologies_sec .sec_heading{
+    text-align: left;
+}
+.mobile-section .serv_technologies_sec .tab_content{
+    float: left;
+    width: 100%;
+    display: none;
+}
+.mobile-section .serv_technologies_sec .tab_content ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -9px 10px;
+}
+.mobile-section .serv_technologies_sec .tab_content ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 9px 0px;
+    margin: 0 0 10px 0;
+}
+.mobile-section .serv_technologies_sec .tab_content ul li .tech_tab_inner {
+    background: #35ADE30F;
+    border: 1px solid #35ADE3;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 55px;
+    min-height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mobile-section .tech_tab_inner .tab_images {
+    height: 71px;
+    width: 71px;
+    text-align: center;
+    box-shadow: 0px 4px 14px #a3c6d5;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -36px auto 0;
+    border-radius: 10px;
+    padding: 11px;
+}
+.mobile-section .tech_tab_inner .tab_images img{
+    margin: 0;
+}
+.mobile-section .tech_tab_inner .tech_tab_content {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.mobile-section .tech_tab_inner .tech_tab_content p {
+    margin: 0px 0px 15px;
+    line-height: 19px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+}
+.mobile-section .serv_technologies_sec .sub-title1{
+    background: #fff;
+    border: 1px solid #E5ECF9;
+    border-radius: 5px;
+    border-bottom: 3px #00B5E8 solid;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    padding: 22px 20px 18px;
+    background: url("../../../../uploads/2023/03/acc_drop_arrow.svg") no-repeat right 19px top 28px;
+    cursor: pointer;
+    margin:10px 0;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper{
+    float: left;
+    width: 100%;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .Block {
+    float: left;
+    width: 100%;
+}
+.mobile-section .serv_technologies_sec .fronttab .sub-title1{
+    border-bottom: 3px #F44336 solid;
+}
+.mobile-section .serv_technologies_sec .backtab .sub-title1{
+    border-bottom: 3px #00B5E8 solid;
+}
+.mobile-section .serv_technologies_sec .datatab .sub-title1{
+    border-bottom: 3px #24292D solid;
+}
+.mobile-section .serv_technologies_sec .designtooltab .sub-title1{
+    border-bottom: 3px #9E8868 solid;
+}
+.mobile-section .serv_technologies_sec .cloudtab .sub-title1{
+    border-bottom: 3px #000000 solid;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .current .sub-title1{
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.16);
+    border: 1px solid #E5ECF9;
+    border-radius: 5px;
+    color: #fff;
+    background: url("../../../../uploads/2023/03/acc_up_arrow.svg") no-repeat right 19px top 28px;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .fronttab.current .sub-title1{    
+    background-color:#F44336 ;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .backtab.current .sub-title1{    
+    background-color:#00B5E8 ;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .datatab.current .sub-title1{    
+    background-color:#24292D ;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .designtooltab.current .sub-title1{    
+    background-color:#9E8868 ;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .cloudtab.current .sub-title1{    
+    background-color:#000000 ;
+}
+.mobile-section .serv_technologies_sec .tab-main-wrapper .Block.current .tab_content{
+    display: block;
+}
+.mobile-content.mobile-section .hp_blog_sec {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 44px 0 60px 0;
+}
+.mobile-section .hp_blog_top {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 479px){
+    .mobile-section .service_services_section .bds_img_head h3{
+        padding-right:30px;
+    }
+}

@@ -1,0 +1,168 @@
+.case_study_banner{
+    background: transparent linear-gradient(180deg, #F7F8FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    padding: 237px 0px 133px 0px;
+    position: relative;
+}
+.case_study_banner p.sub_heading{
+    font-size: 14px;
+    color: #707070;
+    line-height: 21px;
+    margin: 16px 0px 28px;
+    font-weight: 500;
+}
+.case_study_banner h1{
+    letter-spacing: -0.36px;
+    font-size: 36px;
+    line-height: 60px;
+    margin: 0;
+}
+.case_study_banner > .container{
+    max-width: 1204px;
+}
+.faq_content > .container {
+    max-width: 1205px;
+}
+.faq_content .sub-title1 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    padding: 25px 0px;
+}
+.Block.Panel{
+    border: 1px solid #DBA827;
+    padding: 0px 30px;
+    margin: 0px 0px 20px;
+    border-radius: 5px;
+}
+.Block.Panel.current {
+    padding: 0px 30px 25px;
+}   
+.Block.Panel:nth-child(2){
+    border-color: #21A5AA;
+}
+.Block.Panel:nth-child(3){
+    border-color: #0136F8;
+}
+.Block.Panel:nth-child(4){
+    border-color: #FD5E85;
+}
+.Block.Panel:nth-child(5){
+    border-color: #7956F9;
+}
+.Block.Panel:nth-child(6){
+    border-color: #070938;
+}
+.Block.Panel:nth-child(7){
+    border-color: #F59850;
+}
+.Block.Panel:nth-child(8){
+    border-color: #979F23;
+}
+.Block.Panel:nth-child(9){
+    border-color: #A162B9;
+}
+.Block.Panel:nth-child(10){
+    border-color: #2BA4CB;
+}
+.Block.Panel:nth-child(11){
+    border-color: #4C9720;
+}
+.Block.Panel:nth-child(11){
+    border-color: #FF0000;
+}
+#prodAccordion .Block .prodAccordionContent{
+    display: none;
+}
+.faq_content .sub-title1:after {
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 29px;
+    background: url('../../../uploads/2023/02/down_arrow.svg') no-repeat center;
+}
+.faq_content .Panel.current .sub-title1:after {
+    background: url('../../../uploads/2023/02/close_sign.svg') no-repeat center;
+}
+#prodAccordion .Block .prodAccordionContent ul{
+    list-style: none;
+    padding-left: 20px;
+}
+#prodAccordion .Block .prodAccordionContent ul li{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+div#prodAccordion {
+    margin: 0px 0px 130px;
+}
+div#prodAccordion *{
+    transition: none;
+}
+#prodAccordion .Block .prodAccordionContent p a{
+    color: #35ade3;
+}
+#prodAccordion .Block .prodAccordionContent p a:hover{
+    color: #070938;
+}
+/* bubble */
+.all-bubble.red {
+    bottom: 1px;
+}
+.all-bubble.yellow {
+    bottom: 68px;
+}
+.all-bubble.yellow.right {
+    right: 2.5%;
+}
+.all-bubble.green.border {
+    bottom: -85px;
+    right: 130px;
+    top: auto;
+}
+.all-bubble.gray.right {
+    bottom: 20px;
+    right: 3%;
+}
+.all-bubble.big.sky-blue {
+    bottom: -133px;
+}
+.all-bubble.green {
+    right: 29%;
+    top: 220px;
+}
+.all-bubble.blue {
+    left: auto;
+    top: 65%;
+    right: 250px;
+}
+.all-bubble.dark-blue {
+    bottom: 0px;
+    right: 36%;
+}
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
+    .case_study_banner h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .case_study_banner {
+        padding: 185px 0px 45px 0px;
+    }
+    div#prodAccordion {
+        margin: 0px 0px 80px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .faq_content .sub-title1{
+        padding-right: 30px;
+    }
+}
+
+
